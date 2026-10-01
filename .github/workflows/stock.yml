@@ -1,0 +1,43 @@
+name: stock
+on:
+  schedule:
+    - cron: "30 20 * * *"      # 5:30 JST 朝の集中監視(起動遅れ対策で2回)
+    - cron: "45 20 * * *"      # 5:45 JST
+    - cron: "*/15 1-20 * * *"  # 10:00〜翌5:59 JST は15分間隔で1回チェック
+  workflow_dispatch:
+concurrency:
+  group: watch
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  stock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: 監視
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          # 現在(JST)から10:00までの残り分数。朝6〜10時以外は1回だけ確認する
+          now=$(TZ=Asia/Tokyo date +%s)
+          end=$(TZ=Asia/Tokyo date -d "10:00" +%s)
+          h=$(TZ=Asia/Tokyo date +%H)
+          if [ "$h" -ge 5 ] && [ "$h" -lt 10 ]; then
+            min=$(( (end - now) / 60 ))
+            python watch.py stock --minutes "$min" --interval 60
+          else
+            python watch.py stock --minutes 1
+          fi
+      - name: 状態を保存
+        run: |
+          git config user.name "watch-bot"
+          git config user.email "watch-bot@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || (git commit -m "update state" && git pull --rebase && git push)
