@@ -6,7 +6,7 @@ on:
     - cron: "*/15 1-20 * * *"  # 10:00〜翌5:59 JST は15分間隔で1回チェック
   workflow_dispatch:
 concurrency:
-  group: watch
+  group: stock
   cancel-in-progress: false
 permissions:
   contents: write

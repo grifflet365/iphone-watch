@@ -25,7 +25,7 @@ APPLE_URL = "https://www.apple.com/jp/shop/pickup-message-recommendations"
 APPLE_LOCATION = "104-0061"  # 銀座。近隣の都内5店+川崎が返る
 KANTO_STATES = {"東京都", "神奈川県", "埼玉県", "千葉県"}
 TARGET_CAPACITIES = ("256GB", "512GB", "1TB")  # 通知対象の容量(全色)
-STATE_FILE = Path(__file__).with_name("state.json")
+STATE_FILE = Path(__file__).with_name("state.json")  # cmd_price は state_price.json に差し替える(価格と在庫で書き込みが衝突しないように)
 WEBHOOK = os.environ.get("DISCORD_WEBHOOK_URL", "")
 FAIL_NOTIFY_AFTER = 5  # 連続失敗がこの回数に達したら1回だけ知らせる
 
@@ -106,6 +106,8 @@ def diff_text(r):
 
 
 def cmd_price(_args):
+    global STATE_FILE
+    STATE_FILE = STATE_FILE.with_name("state_price.json")
     state = load_state()
     rows = fetch_prices()
     prev = state.get("best", {})
