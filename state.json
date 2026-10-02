@@ -1,0 +1,98 @@
+{
+ "apple": {
+  "MJX54J/A": [
+   "銀座"
+  ],
+  "MJX64J/A": [
+   "銀座"
+  ],
+  "MJX74J/A": [
+   "銀座"
+  ],
+  "MJX84J/A": [
+   "銀座"
+  ],
+  "MJX94J/A": [
+   "銀座"
+  ],
+  "MJXA4J/A": [
+   "銀座"
+  ],
+  "MJXC4J/A": [
+   "銀座"
+  ],
+  "MJXD4J/A": [
+   "銀座"
+  ],
+  "MJXE4J/A": [
+   "銀座"
+  ],
+  "MJXF4J/A": [
+   "銀座"
+  ],
+  "MJXG4J/A": [
+   "銀座"
+  ],
+  "MJXH4J/A": [
+   "銀座"
+  ],
+  "MJR54J/A": [
+   "銀座"
+  ],
+  "MJR64J/A": [
+   "銀座"
+  ],
+  "MJR74J/A": [
+   "銀座"
+  ],
+  "MJR84J/A": [
+   "銀座"
+  ],
+  "MJR94J/A": [
+   "銀座"
+  ],
+  "MJRC4J/A": [
+   "銀座"
+  ],
+  "MJRD4J/A": [
+   "銀座"
+  ],
+  "MJRE4J/A": [
+   "銀座"
+  ],
+  "MJRF4J/A": [],
+  "MJRG4J/A": [
+   "川崎"
+  ],
+  "MJRH4J/A": [],
+  "MJRJ4J/A": [
+   "川崎"
+  ]
+ },
+ "amazon": {
+  "MJX54J/A": false,
+  "MJX64J/A": false,
+  "MJX74J/A": false,
+  "MJX84J/A": false,
+  "MJX94J/A": false,
+  "MJXA4J/A": false,
+  "MJXC4J/A": false,
+  "MJXD4J/A": false,
+  "MJXE4J/A": false,
+  "MJXF4J/A": false,
+  "MJXG4J/A": false,
+  "MJXH4J/A": false,
+  "MJR54J/A": false,
+  "MJR64J/A": false,
+  "MJR74J/A": false,
+  "MJR84J/A": false,
+  "MJR94J/A": false,
+  "MJRC4J/A": false,
+  "MJRD4J/A": false,
+  "MJRE4J/A": false,
+  "MJRF4J/A": false,
+  "MJRG4J/A": false,
+  "MJRH4J/A": false,
+  "MJRJ4J/A": false
+ }
+}
