@@ -49,9 +49,7 @@
    "銀座"
   ],
   "MJRF4J/A": [],
-  "MJRG4J/A": [
-   "川崎"
-  ],
+  "MJRG4J/A": [],
   "MJRH4J/A": [],
   "MJRJ4J/A": [
    "川崎"
@@ -72,7 +70,7 @@
   "MJXH4J/A": false,
   "MJR54J/A": false,
   "MJR64J/A": false,
-  "MJR74J/A": true,
+  "MJR74J/A": false,
   "MJR84J/A": false,
   "MJR94J/A": false,
   "MJRC4J/A": false,
