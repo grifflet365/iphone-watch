@@ -46,14 +46,22 @@
   "MJRC4J/A": [
    "丸の内"
   ],
-  "MJRD4J/A": [],
+  "MJRD4J/A": [
+   "銀座"
+  ],
   "MJRE4J/A": [
    "銀座"
   ],
-  "MJRF4J/A": [],
-  "MJRG4J/A": [],
+  "MJRF4J/A": [
+   "銀座"
+  ],
+  "MJRG4J/A": [
+   "銀座"
+  ],
   "MJRH4J/A": [],
-  "MJRJ4J/A": []
+  "MJRJ4J/A": [
+   "銀座"
+  ]
  },
  "amazon": {
   "MJX54J/A": false,
