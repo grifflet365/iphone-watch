@@ -6,9 +6,7 @@
   "MJX64J/A": [
    "銀座"
   ],
-  "MJX74J/A": [
-   "丸の内"
-  ],
+  "MJX74J/A": [],
   "MJX84J/A": [
    "銀座"
   ],
@@ -29,7 +27,7 @@
    "銀座"
   ],
   "MJXG4J/A": [
-   "銀座"
+   "川崎"
   ],
   "MJXH4J/A": [
    "銀座"
@@ -40,9 +38,7 @@
   "MJR64J/A": [
    "銀座"
   ],
-  "MJR74J/A": [
-   "銀座"
-  ],
+  "MJR74J/A": [],
   "MJR84J/A": [
    "銀座"
   ],
@@ -50,11 +46,9 @@
    "銀座"
   ],
   "MJRC4J/A": [
-   "銀座"
+   "丸の内"
   ],
-  "MJRD4J/A": [
-   "銀座"
-  ],
+  "MJRD4J/A": [],
   "MJRE4J/A": [
    "銀座"
   ],
@@ -62,11 +56,11 @@
    "銀座"
   ],
   "MJRG4J/A": [
-   "銀座"
+   "表参道"
   ],
   "MJRH4J/A": [],
   "MJRJ4J/A": [
-   "銀座"
+   "丸の内"
   ]
  },
  "amazon": {
@@ -83,16 +77,16 @@
   "MJXG4J/A": false,
   "MJXH4J/A": false,
   "MJR54J/A": false,
-  "MJR64J/A": true,
+  "MJR64J/A": false,
   "MJR74J/A": false,
   "MJR84J/A": false,
   "MJR94J/A": false,
   "MJRC4J/A": false,
-  "MJRD4J/A": true,
+  "MJRD4J/A": false,
   "MJRE4J/A": false,
   "MJRF4J/A": false,
   "MJRG4J/A": false,
-  "MJRH4J/A": false,
+  "MJRH4J/A": true,
   "MJRJ4J/A": false
  }
 }
