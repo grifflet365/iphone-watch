@@ -6,9 +6,7 @@
   "MJX64J/A": [
    "銀座"
   ],
-  "MJX74J/A": [
-   "丸の内"
-  ],
+  "MJX74J/A": [],
   "MJX84J/A": [
    "銀座"
   ],
@@ -85,10 +83,10 @@
   "MJR54J/A": false,
   "MJR64J/A": true,
   "MJR74J/A": false,
-  "MJR84J/A": true,
+  "MJR84J/A": false,
   "MJR94J/A": false,
   "MJRC4J/A": false,
-  "MJRD4J/A": false,
+  "MJRD4J/A": true,
   "MJRE4J/A": false,
   "MJRF4J/A": false,
   "MJRG4J/A": false,
