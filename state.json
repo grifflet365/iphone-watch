@@ -26,9 +26,7 @@
   "MJXF4J/A": [
    "銀座"
   ],
-  "MJXG4J/A": [
-   "丸の内"
-  ],
+  "MJXG4J/A": [],
   "MJXH4J/A": [
    "銀座"
   ],
@@ -51,18 +49,20 @@
    "銀座"
   ],
   "MJRD4J/A": [
-   "銀座"
+   "渋谷"
   ],
   "MJRE4J/A": [
-   "銀座"
+   "表参道"
   ],
   "MJRF4J/A": [
-   "川崎"
+   "表参道"
   ],
-  "MJRG4J/A": [],
+  "MJRG4J/A": [
+   "渋谷"
+  ],
   "MJRH4J/A": [],
   "MJRJ4J/A": [
-   "銀座"
+   "表参道"
   ]
  },
  "amazon": {
@@ -88,7 +88,7 @@
   "MJRE4J/A": false,
   "MJRF4J/A": false,
   "MJRG4J/A": false,
-  "MJRH4J/A": false,
+  "MJRH4J/A": true,
   "MJRJ4J/A": false
  }
 }
