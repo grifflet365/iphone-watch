@@ -16,6 +16,8 @@ import re
 import sys
 import time
 from pathlib import Path
+from datetime import datetime, timezone, timedelta
+from urllib.parse import urlsplit, urlunsplit
 
 import requests
 
@@ -28,6 +30,54 @@ TARGET_CAPACITIES = ("256GB", "512GB", "1TB")  # 通知対象の容量(全色)
 STATE_FILE = Path(__file__).with_name("state.json")  # cmd_price は state_price.json に差し替える(価格と在庫で書き込みが衝突しないように)
 WEBHOOK = os.environ.get("DISCORD_WEBHOOK_URL", "")
 FAIL_NOTIFY_AFTER = 5  # 連続失敗がこの回数に達したら1回だけ知らせる
+STORES = ("銀座", "丸の内", "表参道", "渋谷", "新宿", "川崎")
+COLORS = ("ブラック", "シルバー", "バーガンディ", "グレイシャー")
+
+
+def discord_request(method, url, **kwargs):
+    for attempt in range(5):
+        response = requests.request(method, url, timeout=30, **kwargs)
+        if response.status_code != 429:
+            return response
+        time.sleep(float(response.json().get("retry_after", 2)))
+    response.raise_for_status()
+    return response
+
+
+def update_stock_table(state, rows, apple=None, error=False):
+    """モデル別の固定メッセージを編集。候補にない組み合わせは不明。"""
+    timestamp = datetime.now(timezone(timedelta(hours=9))).strftime("%m/%d %H:%M:%S JST")
+    by_name = {row["name"]: row["part"] for row in rows}
+    ids = state.setdefault("stock_table_messages", {})
+    base = urlsplit(WEBHOOK)
+    for model in ("Pro", "Pro Max"):
+        lines = ["容量 / 色 | 銀 丸 表 渋 新 川", "---------------------------"]
+        for capacity in TARGET_CAPACITIES:
+            for color in COLORS:
+                part = by_name.get(f"{model} {capacity} {color}")
+                available = apple.get(part, set()) if apple is not None else set()
+                cells = " ".join("○" if store in available else "？" for store in STORES)
+                lines.append(f"{capacity} {color} | {cells}")
+        text = (f"🍎 **iPhone 18 {model} 店舗受け取り在庫**\n"
+                f"更新: {timestamp}" + (" ⚠ 取得失敗" if error else "") + "\n"
+                "銀=銀座 丸=丸の内 表=表参道 渋=渋谷 新=新宿 川=川崎\n"
+                "○=受け取り可能　？=未確認・候補なし・取得失敗\n"
+                "```text\n" + "\n".join(lines) + "\n```\n"
+                "https://www.apple.com/jp/shop/buy-iphone/iphone-18-pro")
+        if not WEBHOOK:
+            print(text, flush=True)
+            continue
+        payload = {"content": text, "allowed_mentions": {"parse": []}}
+        if ids.get(model):
+            url = urlunsplit(base._replace(path=base.path.rstrip("/") + "/messages/" + ids[model]))
+            response = discord_request("PATCH", url, json=payload)
+            if response.status_code != 404:
+                response.raise_for_status()
+                continue
+        response = discord_request("POST", WEBHOOK, params={"wait": "true"}, json=payload)
+        response.raise_for_status()
+        ids[model] = response.json()["id"]
+        save_state(state)  # 初回作成直後にID保存。以降は同じメッセージを編集
 
 
 def send(text):
@@ -35,10 +85,8 @@ def send(text):
     if not WEBHOOK:
         return
     for i in range(0, len(text), 1900):
-        r = requests.post(WEBHOOK, json={"content": text[i:i + 1900]}, timeout=30)
-        if r.status_code == 429:
-            time.sleep(float(r.json().get("retry_after", 2)))
-            requests.post(WEBHOOK, json={"content": text[i:i + 1900]}, timeout=30)
+        r = discord_request("POST", WEBHOOK, json={"content": text[i:i + 1900]})
+        r.raise_for_status()
 
 
 def load_state():
@@ -130,11 +178,15 @@ def cmd_stock(args):
     amz_seen = state.get("amazon", {})
     end = time.time() + args.minutes * 60
     fails, notified_fail, n = 0, False, 0
+    rows = state.get("stock_table_rows", [])
+    update_stock_table(state, rows)
     while True:
         try:
             if n % 5 == 0 or n == 0:  # 価格表とAmazon在庫は5回に1回
                 rows = fetch_prices()
+                state["stock_table_rows"] = rows
             apple = fetch_apple_stock([r["part"] for r in rows])
+            update_stock_table(state, rows, apple)
             fails, notified_fail = 0, False
             first_run = not seen
             for r in rows:
@@ -149,9 +201,13 @@ def cmd_stock(args):
                     amz_seen[r["part"]] = r["amazon"]
         except Exception as e:  # noqa: BLE001
             fails += 1
-            print(f"取得失敗({fails}回連続): {e}", file=sys.stderr, flush=True)
+            print(f"取得失敗({fails}回連続): {type(e).__name__}", file=sys.stderr, flush=True)
+            try:
+                update_stock_table(state, rows, error=True)
+            except requests.RequestException:
+                print("在庫表の更新にも失敗しました", file=sys.stderr, flush=True)
             if fails >= FAIL_NOTIFY_AFTER and not notified_fail:
-                send(f"⚠️ 在庫取得が{fails}回連続で失敗しています: {e}")
+                send(f"⚠️ 在庫取得が{fails}回連続で失敗しています: {type(e).__name__}")
                 notified_fail = True
         n += 1
         if time.time() + args.interval >= end:
