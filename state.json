@@ -90,5 +90,203 @@
   "MJRG4J/A": false,
   "MJRH4J/A": false,
   "MJRJ4J/A": false
- }
+ },
+ "stock_table_messages": {
+  "Pro": "1557920163351896176",
+  "Pro Max": "1557920165734256782"
+ },
+ "stock_table_rows": [
+  {
+   "name": "Pro Max 256GB ブラック",
+   "part": "MJX54J/A",
+   "msrp": 239800,
+   "best": 225000,
+   "shop": "買取ベストワン",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 256GB シルバー",
+   "part": "MJX64J/A",
+   "msrp": 239800,
+   "best": 225000,
+   "shop": "買取ベストワン",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 256GB バーガンディ",
+   "part": "MJX74J/A",
+   "msrp": 239800,
+   "best": 241500,
+   "shop": "買取BASE",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 256GB グレイシャー",
+   "part": "MJX84J/A",
+   "msrp": 239800,
+   "best": 225000,
+   "shop": "買取ベストワン",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 512GB ブラック",
+   "part": "MJX94J/A",
+   "msrp": 274800,
+   "best": 262000,
+   "shop": "PANDA買取",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 512GB シルバー",
+   "part": "MJXA4J/A",
+   "msrp": 274800,
+   "best": 261000,
+   "shop": "森森買取",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 512GB バーガンディ",
+   "part": "MJXC4J/A",
+   "msrp": 274800,
+   "best": 275000,
+   "shop": "買取商店",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 512GB グレイシャー",
+   "part": "MJXD4J/A",
+   "msrp": 274800,
+   "best": 262000,
+   "shop": "PANDA買取",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 1TB ブラック",
+   "part": "MJXE4J/A",
+   "msrp": 344800,
+   "best": 332000,
+   "shop": "PANDA買取",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 1TB シルバー",
+   "part": "MJXF4J/A",
+   "msrp": 344800,
+   "best": 332000,
+   "shop": "PANDA買取",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 1TB バーガンディ",
+   "part": "MJXG4J/A",
+   "msrp": 344800,
+   "best": 342000,
+   "shop": "買取商店",
+   "amazon": false
+  },
+  {
+   "name": "Pro Max 1TB グレイシャー",
+   "part": "MJXH4J/A",
+   "msrp": 344800,
+   "best": 330000,
+   "shop": "PANDA買取",
+   "amazon": false
+  },
+  {
+   "name": "Pro 256GB ブラック",
+   "part": "MJR54J/A",
+   "msrp": 219800,
+   "best": 199000,
+   "shop": "アバウテック",
+   "amazon": true
+  },
+  {
+   "name": "Pro 256GB シルバー",
+   "part": "MJR64J/A",
+   "msrp": 219800,
+   "best": 199000,
+   "shop": "アバウテック",
+   "amazon": false
+  },
+  {
+   "name": "Pro 256GB バーガンディ",
+   "part": "MJR74J/A",
+   "msrp": 219800,
+   "best": 212300,
+   "shop": "PANDA買取",
+   "amazon": false
+  },
+  {
+   "name": "Pro 256GB グレイシャー",
+   "part": "MJR84J/A",
+   "msrp": 219800,
+   "best": 199000,
+   "shop": "アバウテック",
+   "amazon": false
+  },
+  {
+   "name": "Pro 512GB ブラック",
+   "part": "MJR94J/A",
+   "msrp": 254800,
+   "best": 230000,
+   "shop": "買取商店",
+   "amazon": false
+  },
+  {
+   "name": "Pro 512GB シルバー",
+   "part": "MJRC4J/A",
+   "msrp": 254800,
+   "best": 230000,
+   "shop": "アバウテック",
+   "amazon": false
+  },
+  {
+   "name": "Pro 512GB バーガンディ",
+   "part": "MJRD4J/A",
+   "msrp": 254800,
+   "best": 246000,
+   "shop": "買取商店",
+   "amazon": false
+  },
+  {
+   "name": "Pro 512GB グレイシャー",
+   "part": "MJRE4J/A",
+   "msrp": 254800,
+   "best": 233000,
+   "shop": "PANDA買取",
+   "amazon": false
+  },
+  {
+   "name": "Pro 1TB ブラック",
+   "part": "MJRF4J/A",
+   "msrp": 324800,
+   "best": 302000,
+   "shop": "買取ベストワン",
+   "amazon": false
+  },
+  {
+   "name": "Pro 1TB シルバー",
+   "part": "MJRG4J/A",
+   "msrp": 324800,
+   "best": 307000,
+   "shop": "PANDA買取",
+   "amazon": false
+  },
+  {
+   "name": "Pro 1TB バーガンディ",
+   "part": "MJRH4J/A",
+   "msrp": 324800,
+   "best": 308000,
+   "shop": "買取商店",
+   "amazon": false
+  },
+  {
+   "name": "Pro 1TB グレイシャー",
+   "part": "MJRJ4J/A",
+   "msrp": 324800,
+   "best": 302000,
+   "shop": "買取ベストワン",
+   "amazon": false
+  }
+ ]
 }
