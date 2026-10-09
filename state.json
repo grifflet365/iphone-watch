@@ -16,7 +16,9 @@
   "MJXA4J/A": [
    "銀座"
   ],
-  "MJXC4J/A": [],
+  "MJXC4J/A": [
+   "銀座"
+  ],
   "MJXD4J/A": [
    "銀座"
   ],
@@ -37,7 +39,7 @@
    "銀座"
   ],
   "MJR74J/A": [
-   "川崎"
+   "銀座"
   ],
   "MJR84J/A": [
    "銀座"
@@ -48,12 +50,14 @@
   "MJRC4J/A": [
    "銀座"
   ],
-  "MJRD4J/A": [],
+  "MJRD4J/A": [
+   "銀座"
+  ],
   "MJRE4J/A": [
-   "表参道"
+   "銀座"
   ],
   "MJRF4J/A": [
-   "川崎"
+   "銀座"
   ],
   "MJRG4J/A": [],
   "MJRH4J/A": [],
@@ -74,7 +78,7 @@
   "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": false,
-  "MJR54J/A": false,
+  "MJR54J/A": true,
   "MJR64J/A": false,
   "MJR74J/A": false,
   "MJR84J/A": false,
