@@ -76,7 +76,7 @@
   "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": false,
-  "MJR54J/A": true,
+  "MJR54J/A": false,
   "MJR64J/A": false,
   "MJR74J/A": false,
   "MJR84J/A": false,
@@ -196,7 +196,7 @@
    "msrp": 219800,
    "best": 197000,
    "shop": "アバウテック",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro 256GB シルバー",
