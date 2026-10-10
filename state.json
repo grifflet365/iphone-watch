@@ -58,7 +58,7 @@
    "丸の内"
   ],
   "MJRG4J/A": [
-   "表参道"
+   "新宿"
   ],
   "MJRH4J/A": [],
   "MJRJ4J/A": []
@@ -76,7 +76,7 @@
   "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": false,
-  "MJR54J/A": true,
+  "MJR54J/A": false,
   "MJR64J/A": true,
   "MJR74J/A": false,
   "MJR84J/A": false,
@@ -196,7 +196,7 @@
    "msrp": 219800,
    "best": 199000,
    "shop": "買取BASE",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro 256GB シルバー",
