@@ -55,14 +55,12 @@
    "銀座"
   ],
   "MJRF4J/A": [
-   "銀座"
-  ],
-  "MJRG4J/A": [
    "丸の内"
   ],
-  "MJRH4J/A": [
-   "銀座"
+  "MJRG4J/A": [
+   "表参道"
   ],
+  "MJRH4J/A": [],
   "MJRJ4J/A": []
  },
  "amazon": {
@@ -78,7 +76,7 @@
   "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": false,
-  "MJR54J/A": false,
+  "MJR54J/A": true,
   "MJR64J/A": true,
   "MJR74J/A": false,
   "MJR84J/A": false,
@@ -116,7 +114,7 @@
    "name": "Pro Max 256GB バーガンディ",
    "part": "MJX74J/A",
    "msrp": 239800,
-   "best": 245000,
+   "best": 246000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -132,7 +130,7 @@
    "name": "Pro Max 512GB ブラック",
    "part": "MJX94J/A",
    "msrp": 274800,
-   "best": 266000,
+   "best": 267000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -140,15 +138,15 @@
    "name": "Pro Max 512GB シルバー",
    "part": "MJXA4J/A",
    "msrp": 274800,
-   "best": 262000,
-   "shop": "森森買取",
+   "best": 264000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro Max 512GB バーガンディ",
    "part": "MJXC4J/A",
    "msrp": 274800,
-   "best": 282000,
+   "best": 283000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -156,7 +154,7 @@
    "name": "Pro Max 512GB グレイシャー",
    "part": "MJXD4J/A",
    "msrp": 274800,
-   "best": 266000,
+   "best": 267000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -164,41 +162,41 @@
    "name": "Pro Max 1TB ブラック",
    "part": "MJXE4J/A",
    "msrp": 344800,
-   "best": 332000,
-   "shop": "買取ホムラ",
+   "best": 331000,
+   "shop": "森森買取",
    "amazon": false
   },
   {
    "name": "Pro Max 1TB シルバー",
    "part": "MJXF4J/A",
    "msrp": 344800,
-   "best": 332000,
-   "shop": "買取ホムラ",
+   "best": 330000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro Max 1TB バーガンディ",
    "part": "MJXG4J/A",
    "msrp": 344800,
-   "best": 347000,
-   "shop": "買取一丁目",
+   "best": 349000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro Max 1TB グレイシャー",
    "part": "MJXH4J/A",
    "msrp": 344800,
-   "best": 332000,
-   "shop": "買取ホムラ",
+   "best": 330000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro 256GB ブラック",
    "part": "MJR54J/A",
    "msrp": 219800,
-   "best": 198000,
-   "shop": "PANDA買取",
-   "amazon": false
+   "best": 199000,
+   "shop": "買取BASE",
+   "amazon": true
   },
   {
    "name": "Pro 256GB シルバー",
@@ -212,7 +210,7 @@
    "name": "Pro 256GB バーガンディ",
    "part": "MJR74J/A",
    "msrp": 219800,
-   "best": 214000,
+   "best": 214500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -220,31 +218,31 @@
    "name": "Pro 256GB グレイシャー",
    "part": "MJR84J/A",
    "msrp": 219800,
-   "best": 198000,
-   "shop": "PANDA買取",
+   "best": 199000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro 512GB ブラック",
    "part": "MJR94J/A",
    "msrp": 254800,
-   "best": 238000,
-   "shop": "買取一丁目",
+   "best": 239000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro 512GB シルバー",
    "part": "MJRC4J/A",
    "msrp": 254800,
-   "best": 232000,
-   "shop": "買取一丁目",
+   "best": 234000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro 512GB バーガンディ",
    "part": "MJRD4J/A",
    "msrp": 254800,
-   "best": 250000,
+   "best": 250500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -252,8 +250,8 @@
    "name": "Pro 512GB グレイシャー",
    "part": "MJRE4J/A",
    "msrp": 254800,
-   "best": 238000,
-   "shop": "買取一丁目",
+   "best": 239000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
@@ -261,7 +259,7 @@
    "part": "MJRF4J/A",
    "msrp": 324800,
    "best": 297000,
-   "shop": "買取ホムラ",
+   "shop": "買取BASE",
    "amazon": false
   },
   {
@@ -269,15 +267,15 @@
    "part": "MJRG4J/A",
    "msrp": 324800,
    "best": 297000,
-   "shop": "買取ホムラ",
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro 1TB バーガンディ",
    "part": "MJRH4J/A",
    "msrp": 324800,
-   "best": 310000,
-   "shop": "買取一丁目",
+   "best": 311000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
@@ -285,7 +283,7 @@
    "part": "MJRJ4J/A",
    "msrp": 324800,
    "best": 297000,
-   "shop": "買取ホムラ",
+   "shop": "買取BASE",
    "amazon": false
   }
  ]
