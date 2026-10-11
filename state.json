@@ -48,9 +48,7 @@
   "MJRC4J/A": [
    "銀座"
   ],
-  "MJRD4J/A": [
-   "表参道"
-  ],
+  "MJRD4J/A": [],
   "MJRE4J/A": [
    "表参道"
   ],
@@ -74,7 +72,7 @@
   "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": false,
-  "MJR54J/A": false,
+  "MJR54J/A": true,
   "MJR64J/A": true,
   "MJR74J/A": false,
   "MJR84J/A": false,
@@ -84,7 +82,7 @@
   "MJRE4J/A": false,
   "MJRF4J/A": false,
   "MJRG4J/A": false,
-  "MJRH4J/A": false,
+  "MJRH4J/A": true,
   "MJRJ4J/A": false
  },
  "stock_table_messages": {
@@ -194,7 +192,7 @@
    "msrp": 219800,
    "best": 198500,
    "shop": "買取BASE",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro 256GB シルバー",
@@ -274,7 +272,7 @@
    "msrp": 324800,
    "best": 311000,
    "shop": "買取BASE",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro 1TB グレイシャー",
