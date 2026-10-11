@@ -58,7 +58,7 @@
    "丸の内"
   ],
   "MJRG4J/A": [
-   "新宿"
+   "川崎"
   ],
   "MJRH4J/A": [],
   "MJRJ4J/A": []
@@ -78,7 +78,7 @@
   "MJXH4J/A": false,
   "MJR54J/A": false,
   "MJR64J/A": true,
-  "MJR74J/A": false,
+  "MJR74J/A": true,
   "MJR84J/A": false,
   "MJR94J/A": false,
   "MJRC4J/A": false,
@@ -212,7 +212,7 @@
    "msrp": 219800,
    "best": 214500,
    "shop": "買取BASE",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro 256GB グレイシャー",
