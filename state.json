@@ -47,15 +47,13 @@
    "銀座"
   ],
   "MJRD4J/A": [],
-  "MJRE4J/A": [
-   "表参道"
-  ],
+  "MJRE4J/A": [],
   "MJRF4J/A": [],
   "MJRG4J/A": [
    "銀座"
   ],
   "MJRH4J/A": [
-   "銀座"
+   "表参道"
   ],
   "MJRJ4J/A": [
    "銀座"
@@ -217,7 +215,7 @@
    "part": "MJR84J/A",
    "msrp": 219800,
    "best": 199000,
-   "shop": "買取BASE",
+   "shop": "モバステ",
    "amazon": false
   },
   {
@@ -233,7 +231,7 @@
    "part": "MJRC4J/A",
    "msrp": 254800,
    "best": 238000,
-   "shop": "携帯空間",
+   "shop": "買取ベストワン",
    "amazon": false
   },
   {
