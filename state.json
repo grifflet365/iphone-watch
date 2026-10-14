@@ -43,22 +43,18 @@
   "MJR94J/A": [
    "銀座"
   ],
-  "MJRC4J/A": [
-   "表参道"
-  ],
+  "MJRC4J/A": [],
   "MJRD4J/A": [],
   "MJRE4J/A": [
    "銀座"
   ],
   "MJRF4J/A": [
-   "丸の内"
+   "川崎"
   ],
   "MJRG4J/A": [
    "銀座"
   ],
-  "MJRH4J/A": [
-   "丸の内"
-  ],
+  "MJRH4J/A": [],
   "MJRJ4J/A": [
    "銀座"
   ]
@@ -98,8 +94,8 @@
    "name": "Pro Max 256GB ブラック",
    "part": "MJX54J/A",
    "msrp": 239800,
-   "best": 236000,
-   "shop": "買取BASE",
+   "best": 236500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
@@ -130,16 +126,16 @@
    "name": "Pro Max 512GB ブラック",
    "part": "MJX94J/A",
    "msrp": 274800,
-   "best": 285000,
-   "shop": "携帯空間",
+   "best": 273000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro Max 512GB シルバー",
    "part": "MJXA4J/A",
    "msrp": 274800,
-   "best": 285000,
-   "shop": "携帯空間",
+   "best": 270500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
@@ -154,24 +150,24 @@
    "name": "Pro Max 512GB グレイシャー",
    "part": "MJXD4J/A",
    "msrp": 274800,
-   "best": 285000,
-   "shop": "携帯空間",
+   "best": 274000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro Max 1TB ブラック",
    "part": "MJXE4J/A",
    "msrp": 344800,
-   "best": 336000,
-   "shop": "買取BASE",
+   "best": 336500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Pro Max 1TB シルバー",
    "part": "MJXF4J/A",
    "msrp": 344800,
-   "best": 332000,
-   "shop": "買取BASE",
+   "best": 332500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
@@ -186,24 +182,24 @@
    "name": "Pro Max 1TB グレイシャー",
    "part": "MJXH4J/A",
    "msrp": 344800,
-   "best": 336000,
-   "shop": "買取BASE",
+   "best": 336500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Pro 256GB ブラック",
    "part": "MJR54J/A",
    "msrp": 219800,
-   "best": 213700,
-   "shop": "携帯空間",
+   "best": 201500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Pro 256GB シルバー",
    "part": "MJR64J/A",
    "msrp": 219800,
-   "best": 213700,
-   "shop": "携帯空間",
+   "best": 200500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
@@ -218,16 +214,16 @@
    "name": "Pro 256GB グレイシャー",
    "part": "MJR84J/A",
    "msrp": 219800,
-   "best": 213700,
-   "shop": "携帯空間",
+   "best": 201500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Pro 512GB ブラック",
    "part": "MJR94J/A",
    "msrp": 254800,
-   "best": 248000,
-   "shop": "ゲストモバイル",
+   "best": 242000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
