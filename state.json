@@ -83,7 +83,7 @@
   "MJR94J/A": false,
   "MJRC4J/A": false,
   "MJRD4J/A": false,
-  "MJRE4J/A": true,
+  "MJRE4J/A": false,
   "MJRF4J/A": false,
   "MJRG4J/A": false,
   "MJRH4J/A": false,
@@ -122,8 +122,8 @@
    "name": "Pro Max 256GB グレイシャー",
    "part": "MJX84J/A",
    "msrp": 239800,
-   "best": 237200,
-   "shop": "ハチ買取",
+   "best": 237000,
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
@@ -138,8 +138,8 @@
    "name": "Pro Max 512GB シルバー",
    "part": "MJXA4J/A",
    "msrp": 274800,
-   "best": 270000,
-   "shop": "ハチ買取",
+   "best": 269500,
+   "shop": "PANDA買取",
    "amazon": false
   },
   {
