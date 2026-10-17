@@ -6,7 +6,9 @@
   "MJX64J/A": [
    "銀座"
   ],
-  "MJX74J/A": [],
+  "MJX74J/A": [
+   "銀座"
+  ],
   "MJX84J/A": [
    "銀座"
   ],
@@ -26,7 +28,9 @@
   "MJXF4J/A": [
    "銀座"
   ],
-  "MJXG4J/A": [],
+  "MJXG4J/A": [
+   "銀座"
+  ],
   "MJXH4J/A": [
    "銀座"
   ],
@@ -36,7 +40,9 @@
   "MJR64J/A": [
    "銀座"
   ],
-  "MJR74J/A": [],
+  "MJR74J/A": [
+   "銀座"
+  ],
   "MJR84J/A": [
    "銀座"
   ],
@@ -46,7 +52,9 @@
   "MJRC4J/A": [
    "銀座"
   ],
-  "MJRD4J/A": [],
+  "MJRD4J/A": [
+   "銀座"
+  ],
   "MJRE4J/A": [
    "銀座"
   ],
@@ -60,7 +68,7 @@
    "銀座"
   ],
   "MJRJ4J/A": [
-   "丸の内"
+   "銀座"
   ]
  },
  "amazon": {
@@ -72,7 +80,7 @@
   "MJXA4J/A": false,
   "MJXC4J/A": false,
   "MJXD4J/A": false,
-  "MJXE4J/A": false,
+  "MJXE4J/A": true,
   "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": false,
@@ -81,10 +89,10 @@
   "MJR74J/A": false,
   "MJR84J/A": false,
   "MJR94J/A": false,
-  "MJRC4J/A": true,
+  "MJRC4J/A": false,
   "MJRD4J/A": false,
   "MJRE4J/A": false,
-  "MJRF4J/A": false,
+  "MJRF4J/A": true,
   "MJRG4J/A": false,
   "MJRH4J/A": false,
   "MJRJ4J/A": false
@@ -164,7 +172,7 @@
    "msrp": 344800,
    "best": 336500,
    "shop": "買取ソムリエ",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro Max 1TB シルバー",
@@ -203,7 +211,7 @@
    "part": "MJR64J/A",
    "msrp": 219800,
    "best": 200500,
-   "shop": "買取ソムリエ",
+   "shop": "携帯空間",
    "amazon": false
   },
   {
@@ -219,7 +227,7 @@
    "part": "MJR84J/A",
    "msrp": 219800,
    "best": 201500,
-   "shop": "買取ソムリエ",
+   "shop": "携帯空間",
    "amazon": false
   },
   {
@@ -236,7 +244,7 @@
    "msrp": 254800,
    "best": 240500,
    "shop": "買取ソムリエ",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro 512GB バーガンディ",
@@ -260,7 +268,7 @@
    "msrp": 324800,
    "best": 298000,
    "shop": "買取ソムリエ",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro 1TB シルバー",
