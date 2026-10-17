@@ -28,9 +28,7 @@
   "MJXF4J/A": [
    "銀座"
   ],
-  "MJXG4J/A": [
-   "銀座"
-  ],
+  "MJXG4J/A": [],
   "MJXH4J/A": [
    "銀座"
   ],
@@ -40,9 +38,7 @@
   "MJR64J/A": [
    "銀座"
   ],
-  "MJR74J/A": [
-   "銀座"
-  ],
+  "MJR74J/A": [],
   "MJR84J/A": [
    "銀座"
   ],
@@ -52,9 +48,7 @@
   "MJRC4J/A": [
    "銀座"
   ],
-  "MJRD4J/A": [
-   "銀座"
-  ],
+  "MJRD4J/A": [],
   "MJRE4J/A": [
    "銀座"
   ],
@@ -80,7 +74,7 @@
   "MJXA4J/A": false,
   "MJXC4J/A": false,
   "MJXD4J/A": false,
-  "MJXE4J/A": true,
+  "MJXE4J/A": false,
   "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": false,
@@ -172,7 +166,7 @@
    "msrp": 344800,
    "best": 336500,
    "shop": "買取ソムリエ",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro Max 1TB シルバー",
