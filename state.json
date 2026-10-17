@@ -6,9 +6,7 @@
   "MJX64J/A": [
    "銀座"
   ],
-  "MJX74J/A": [
-   "表参道"
-  ],
+  "MJX74J/A": [],
   "MJX84J/A": [
    "銀座"
   ],
@@ -79,7 +77,7 @@
   "MJXG4J/A": false,
   "MJXH4J/A": false,
   "MJR54J/A": false,
-  "MJR64J/A": false,
+  "MJR64J/A": true,
   "MJR74J/A": false,
   "MJR84J/A": false,
   "MJR94J/A": false,
@@ -88,7 +86,7 @@
   "MJRE4J/A": false,
   "MJRF4J/A": true,
   "MJRG4J/A": false,
-  "MJRH4J/A": false,
+  "MJRH4J/A": true,
   "MJRJ4J/A": false
  },
  "stock_table_messages": {
@@ -206,7 +204,7 @@
    "msrp": 219800,
    "best": 200500,
    "shop": "携帯空間",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro 256GB バーガンディ",
@@ -278,7 +276,7 @@
    "msrp": 324800,
    "best": 311500,
    "shop": "買取ソムリエ",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro 1TB グレイシャー",
