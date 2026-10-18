@@ -72,7 +72,7 @@
   "MJXA4J/A": false,
   "MJXC4J/A": false,
   "MJXD4J/A": false,
-  "MJXE4J/A": false,
+  "MJXE4J/A": true,
   "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": true,
@@ -164,7 +164,7 @@
    "msrp": 344800,
    "best": 336500,
    "shop": "買取ソムリエ",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro Max 1TB シルバー",
