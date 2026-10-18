@@ -75,18 +75,18 @@
   "MJXE4J/A": false,
   "MJXF4J/A": false,
   "MJXG4J/A": false,
-  "MJXH4J/A": false,
+  "MJXH4J/A": true,
   "MJR54J/A": false,
-  "MJR64J/A": true,
+  "MJR64J/A": false,
   "MJR74J/A": false,
   "MJR84J/A": false,
   "MJR94J/A": false,
   "MJRC4J/A": false,
   "MJRD4J/A": false,
   "MJRE4J/A": false,
-  "MJRF4J/A": true,
+  "MJRF4J/A": false,
   "MJRG4J/A": false,
-  "MJRH4J/A": true,
+  "MJRH4J/A": false,
   "MJRJ4J/A": false
  },
  "stock_table_messages": {
@@ -188,7 +188,7 @@
    "msrp": 344800,
    "best": 336500,
    "shop": "買取ソムリエ",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro 256GB ブラック",
@@ -204,7 +204,7 @@
    "msrp": 219800,
    "best": 200500,
    "shop": "携帯空間",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro 256GB バーガンディ",
@@ -260,7 +260,7 @@
    "msrp": 324800,
    "best": 298000,
    "shop": "買取ソムリエ",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro 1TB シルバー",
@@ -276,7 +276,7 @@
    "msrp": 324800,
    "best": 311500,
    "shop": "買取ソムリエ",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro 1TB グレイシャー",
