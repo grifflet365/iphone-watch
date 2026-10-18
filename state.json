@@ -79,7 +79,7 @@
   "MJR54J/A": false,
   "MJR64J/A": false,
   "MJR74J/A": false,
-  "MJR84J/A": false,
+  "MJR84J/A": true,
   "MJR94J/A": false,
   "MJRC4J/A": false,
   "MJRD4J/A": false,
@@ -220,7 +220,7 @@
    "msrp": 219800,
    "best": 201500,
    "shop": "携帯空間",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro 512GB ブラック",
