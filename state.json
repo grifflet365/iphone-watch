@@ -26,9 +26,7 @@
   "MJXF4J/A": [
    "銀座"
   ],
-  "MJXG4J/A": [
-   "表参道"
-  ],
+  "MJXG4J/A": [],
   "MJXH4J/A": [
    "銀座"
   ],
@@ -39,7 +37,7 @@
    "銀座"
   ],
   "MJR74J/A": [
-   "銀座"
+   "渋谷"
   ],
   "MJR84J/A": [
    "銀座"
@@ -50,9 +48,7 @@
   "MJRC4J/A": [
    "銀座"
   ],
-  "MJRD4J/A": [
-   "銀座"
-  ],
+  "MJRD4J/A": [],
   "MJRE4J/A": [
    "銀座"
   ],
@@ -104,15 +100,15 @@
    "name": "Pro Max 256GB ブラック",
    "part": "MJX54J/A",
    "msrp": 239800,
-   "best": 235000,
-   "shop": "買取ソムリエ",
+   "best": 235500,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro Max 256GB シルバー",
    "part": "MJX64J/A",
    "msrp": 239800,
-   "best": 229800,
+   "best": 230500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -120,7 +116,7 @@
    "name": "Pro Max 256GB バーガンディ",
    "part": "MJX74J/A",
    "msrp": 239800,
-   "best": 247800,
+   "best": 248500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -128,7 +124,7 @@
    "name": "Pro Max 256GB グレイシャー",
    "part": "MJX84J/A",
    "msrp": 239800,
-   "best": 236800,
+   "best": 237500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -136,7 +132,7 @@
    "name": "Pro Max 512GB ブラック",
    "part": "MJX94J/A",
    "msrp": 274800,
-   "best": 271800,
+   "best": 273500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -144,7 +140,7 @@
    "name": "Pro Max 512GB シルバー",
    "part": "MJXA4J/A",
    "msrp": 274800,
-   "best": 269800,
+   "best": 270500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -152,7 +148,7 @@
    "name": "Pro Max 512GB バーガンディ",
    "part": "MJXC4J/A",
    "msrp": 274800,
-   "best": 289800,
+   "best": 291500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -160,7 +156,7 @@
    "name": "Pro Max 512GB グレイシャー",
    "part": "MJXD4J/A",
    "msrp": 274800,
-   "best": 272800,
+   "best": 273500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -184,8 +180,8 @@
    "name": "Pro Max 1TB バーガンディ",
    "part": "MJXG4J/A",
    "msrp": 344800,
-   "best": 354000,
-   "shop": "買取ソムリエ",
+   "best": 354500,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
@@ -200,31 +196,31 @@
    "name": "Pro 256GB ブラック",
    "part": "MJR54J/A",
    "msrp": 219800,
-   "best": 201500,
-   "shop": "買取ソムリエ",
+   "best": 214500,
+   "shop": "携帯空間",
    "amazon": false
   },
   {
    "name": "Pro 256GB シルバー",
    "part": "MJR64J/A",
    "msrp": 219800,
-   "best": 201000,
-   "shop": "買取ソムリエ",
+   "best": 214500,
+   "shop": "携帯空間",
    "amazon": false
   },
   {
    "name": "Pro 256GB バーガンディ",
    "part": "MJR74J/A",
    "msrp": 219800,
-   "best": 215500,
-   "shop": "買取ソムリエ",
+   "best": 216000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro 256GB グレイシャー",
    "part": "MJR84J/A",
    "msrp": 219800,
-   "best": 201500,
+   "best": 214500,
    "shop": "携帯空間",
    "amazon": false
   },
@@ -232,7 +228,7 @@
    "name": "Pro 512GB ブラック",
    "part": "MJR94J/A",
    "msrp": 254800,
-   "best": 242800,
+   "best": 243500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -248,15 +244,15 @@
    "name": "Pro 512GB バーガンディ",
    "part": "MJRD4J/A",
    "msrp": 254800,
-   "best": 251000,
-   "shop": "買取ソムリエ",
+   "best": 251500,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro 512GB グレイシャー",
    "part": "MJRE4J/A",
    "msrp": 254800,
-   "best": 242800,
+   "best": 243500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -272,16 +268,16 @@
    "name": "Pro 1TB シルバー",
    "part": "MJRG4J/A",
    "msrp": 324800,
-   "best": 297000,
-   "shop": "買取wiki",
+   "best": 297500,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro 1TB バーガンディ",
    "part": "MJRH4J/A",
    "msrp": 324800,
-   "best": 311500,
-   "shop": "買取ソムリエ",
+   "best": 312000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
