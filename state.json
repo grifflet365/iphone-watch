@@ -13,7 +13,7 @@
    "銀座"
   ],
   "MJX94J/A": [
-   "丸の内"
+   "表参道"
   ],
   "MJXA4J/A": [
    "銀座"
@@ -83,7 +83,7 @@
   "MJXG4J/A": false,
   "MJXH4J/A": true,
   "MJR54J/A": false,
-  "MJR64J/A": true,
+  "MJR64J/A": false,
   "MJR74J/A": false,
   "MJR84J/A": true,
   "MJR94J/A": false,
@@ -210,7 +210,7 @@
    "msrp": 219800,
    "best": 200000,
    "shop": "買取BASE",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro 256GB バーガンディ",
