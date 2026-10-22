@@ -71,7 +71,7 @@
  },
  "amazon": {
   "MJX54J/A": false,
-  "MJX64J/A": false,
+  "MJX64J/A": true,
   "MJX74J/A": false,
   "MJX84J/A": true,
   "MJX94J/A": false,
@@ -114,7 +114,7 @@
    "msrp": 239800,
    "best": 227000,
    "shop": "アバウテック",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro Max 256GB バーガンディ",
