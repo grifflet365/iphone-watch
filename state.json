@@ -71,7 +71,7 @@
  },
  "amazon": {
   "MJX54J/A": false,
-  "MJX64J/A": true,
+  "MJX64J/A": false,
   "MJX74J/A": false,
   "MJX84J/A": true,
   "MJX94J/A": false,
@@ -114,7 +114,7 @@
    "msrp": 239800,
    "best": 227000,
    "shop": "アバウテック",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro Max 256GB バーガンディ",
@@ -184,8 +184,8 @@
    "name": "Pro Max 1TB バーガンディ",
    "part": "MJXG4J/A",
    "msrp": 344800,
-   "best": 354000,
-   "shop": "モバイルミックス",
+   "best": 353000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
