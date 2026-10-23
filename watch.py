@@ -1,4 +1,4 @@
-"""iPhone 18 Pro / Pro Max 価格・在庫ウォッチ
+"""iPhone 18 Pro Max / Duo 価格・在庫ウォッチ
 
   python watch.py price                 価格一覧をDiscordに送る(1日3回想定)
   python watch.py stock --minutes 240   入荷を監視し、新たに買える状態になった瞬間に送る
@@ -26,6 +26,7 @@ KAITORIX_URL = "https://kaitorix.app/series/iphone-18"
 APPLE_URL = "https://www.apple.com/jp/shop/pickup-message-recommendations"
 APPLE_LOCATION = "104-0061"  # 銀座。近隣の都内5店+川崎が返る
 KANTO_STATES = {"東京都", "神奈川県", "埼玉県", "千葉県"}
+TARGET_MODELS = ("Pro Max", "Duo")  # 通知対象の機種(18 Pro は対象外)
 TARGET_CAPACITIES = ("256GB", "512GB", "1TB")  # 通知対象の容量(全色)
 STATE_FILE = Path(__file__).with_name("state.json")  # cmd_price は state_price.json に差し替える(価格と在庫で書き込みが衝突しないように)
 WEBHOOK = os.environ.get("DISCORD_WEBHOOK_URL", "")
@@ -105,10 +106,12 @@ def fetch_prices():
     t.raise_for_status()
     rows = []
     for tr in re.findall(r"<tr>(.*?)</tr>", t.text, re.S):
-        m = re.search(r'alt="(iPhone 18[^"]*?)".*?nmb-code">([A-Z0-9]{5}J/A)<', tr, re.S)
-        if not m or "Duo" in m.group(1):
+        m = re.search(r'alt="(iPhone [^"]*?)".*?nmb-code">([A-Z0-9]{5}J/A)<', tr, re.S)
+        if not m:
             continue
         name = html.unescape(m.group(1))
+        if not any(k in name for k in TARGET_MODELS):
+            continue
         if not any(f" {c} " in name for c in TARGET_CAPACITIES):
             continue
         msrp = re.search(r'data-label="定価">¥([\d,]+)', tr)
@@ -116,7 +119,7 @@ def fetch_prices():
         amz = re.search(r'class="nmb-az ([^"]*)"', tr)
         num = lambda x: int(x.group(1).replace(",", "")) if x else None
         rows.append({
-            "name": name.replace("iPhone 18 ", ""),
+            "name": name.replace("iPhone 18 ", "").replace("iPhone ", ""),
             "part": m.group(2),
             "msrp": num(msrp),
             "best": num(best),
@@ -160,7 +163,7 @@ def cmd_price(_args):
     rows = fetch_prices()
     prev = state.get("best", {})
     rows.sort(key=lambda r: -(r["best"] - r["msrp"]) if r["best"] and r["msrp"] else 1e9)
-    lines = [f"📱 **iPhone 18 Pro / Pro Max 買取価格** ({time.strftime('%m/%d %H:%M')})"]
+    lines = [f"📱 **iPhone 18 Pro Max / Duo 買取価格** ({time.strftime('%m/%d %H:%M')})"]
     for r in rows:
         chg = ""
         if r["part"] in prev and r["best"] is not None and prev[r["part"]] != r["best"]:
