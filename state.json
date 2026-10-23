@@ -76,16 +76,16 @@
   "MJXA4J/A": false,
   "MJXC4J/A": false,
   "MJXD4J/A": false,
-  "MJXE4J/A": false,
-  "MJXF4J/A": false,
+  "MJXE4J/A": true,
+  "MJXF4J/A": true,
   "MJXG4J/A": false,
-  "MJXH4J/A": false,
+  "MJXH4J/A": true,
   "MJR54J/A": false,
   "MJR64J/A": false,
   "MJR74J/A": false,
   "MJR84J/A": true,
   "MJR94J/A": false,
-  "MJRC4J/A": false,
+  "MJRC4J/A": true,
   "MJRD4J/A": false,
   "MJRE4J/A": false,
   "MJRF4J/A": false,
@@ -168,7 +168,7 @@
    "msrp": 344800,
    "best": 338000,
    "shop": "買取BASE",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro Max 1TB シルバー",
@@ -176,7 +176,7 @@
    "msrp": 344800,
    "best": 334000,
    "shop": "買取BASE",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro Max 1TB バーガンディ",
@@ -192,7 +192,7 @@
    "msrp": 344800,
    "best": 338000,
    "shop": "買取BASE",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro 256GB ブラック",
@@ -240,7 +240,7 @@
    "msrp": 254800,
    "best": 232000,
    "shop": "買取BASE",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro 512GB バーガンディ",
