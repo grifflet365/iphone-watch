@@ -12,14 +12,12 @@
   "MJX84J/A": [
    "銀座"
   ],
-  "MJX94J/A": [
-   "丸の内"
-  ],
+  "MJX94J/A": [],
   "MJXA4J/A": [
    "銀座"
   ],
   "MJXC4J/A": [
-   "銀座"
+   "表参道"
   ],
   "MJXD4J/A": [
    "銀座"
@@ -83,7 +81,7 @@
   "MJX54J/A": false,
   "MJX64J/A": false,
   "MJX74J/A": false,
-  "MJX84J/A": false,
+  "MJX84J/A": true,
   "MJX94J/A": false,
   "MJXA4J/A": false,
   "MJXC4J/A": false,
@@ -91,7 +89,7 @@
   "MJXE4J/A": false,
   "MJXF4J/A": false,
   "MJXG4J/A": false,
-  "MJXH4J/A": false,
+  "MJXH4J/A": true,
   "MJR54J/A": false,
   "MJR64J/A": false,
   "MJR74J/A": false,
@@ -120,8 +118,8 @@
    "name": "Pro Max 256GB ブラック",
    "part": "MJX54J/A",
    "msrp": 239800,
-   "best": 228000,
-   "shop": "買取BASE",
+   "best": 227000,
+   "shop": "アバウテック",
    "amazon": false
   },
   {
@@ -136,7 +134,7 @@
    "name": "Pro Max 256GB バーガンディ",
    "part": "MJX74J/A",
    "msrp": 239800,
-   "best": 240000,
+   "best": 238500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -146,13 +144,13 @@
    "msrp": 239800,
    "best": 232000,
    "shop": "森森買取",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro Max 512GB ブラック",
    "part": "MJX94J/A",
    "msrp": 274800,
-   "best": 269000,
+   "best": 267500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -160,7 +158,7 @@
    "name": "Pro Max 512GB シルバー",
    "part": "MJXA4J/A",
    "msrp": 274800,
-   "best": 266000,
+   "best": 264500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -168,7 +166,7 @@
    "name": "Pro Max 512GB バーガンディ",
    "part": "MJXC4J/A",
    "msrp": 274800,
-   "best": 279000,
+   "best": 277500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -176,7 +174,7 @@
    "name": "Pro Max 512GB グレイシャー",
    "part": "MJXD4J/A",
    "msrp": 274800,
-   "best": 270000,
+   "best": 268500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -184,7 +182,7 @@
    "name": "Pro Max 1TB ブラック",
    "part": "MJXE4J/A",
    "msrp": 344800,
-   "best": 338000,
+   "best": 336500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -192,7 +190,7 @@
    "name": "Pro Max 1TB シルバー",
    "part": "MJXF4J/A",
    "msrp": 344800,
-   "best": 334000,
+   "best": 332500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -208,15 +206,15 @@
    "name": "Pro Max 1TB グレイシャー",
    "part": "MJXH4J/A",
    "msrp": 344800,
-   "best": 338000,
+   "best": 336500,
    "shop": "買取BASE",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Duo 256GB スターホワイト",
    "part": "MK244J/A",
    "msrp": 364800,
-   "best": 410000,
+   "best": 411000,
    "shop": "買取ソムリエ",
    "amazon": false
   },
@@ -224,7 +222,7 @@
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 410000,
+   "best": 411000,
    "shop": "買取ソムリエ",
    "amazon": false
   },
@@ -232,32 +230,32 @@
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 450000,
-   "shop": "買取wiki",
+   "best": 451000,
+   "shop": "携帯空間",
    "amazon": false
   },
   {
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 450000,
-   "shop": "買取wiki",
+   "best": 451000,
+   "shop": "携帯空間",
    "amazon": false
   },
   {
    "name": "Duo 1TB スターホワイト",
    "part": "MK284J/A",
    "msrp": 469800,
-   "best": 502000,
-   "shop": "買取楽園",
+   "best": 508000,
+   "shop": "森森買取",
    "amazon": false
   },
   {
    "name": "Duo 1TB ナイトスカイ",
    "part": "MK294J/A",
    "msrp": 469800,
-   "best": 502000,
-   "shop": "買取楽園",
+   "best": 508000,
+   "shop": "森森買取",
    "amazon": false
   }
  ]
