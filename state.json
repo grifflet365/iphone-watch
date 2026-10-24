@@ -12,16 +12,18 @@
   "MJX84J/A": [
    "銀座"
   ],
-  "MJX94J/A": [],
+  "MJX94J/A": [
+   "銀座"
+  ],
   "MJXA4J/A": [
    "銀座"
   ],
   "MJXC4J/A": [],
   "MJXD4J/A": [
-   "表参道"
+   "銀座"
   ],
   "MJXE4J/A": [
-   "丸の内"
+   "銀座"
   ],
   "MJXF4J/A": [
    "銀座"
@@ -65,10 +67,16 @@
   ],
   "MJRJ4J/A": [
    "銀座"
-  ]
+  ],
+  "MK244J/A": [],
+  "MK254J/A": [],
+  "MK264J/A": [],
+  "MK274J/A": [],
+  "MK284J/A": [],
+  "MK294J/A": []
  },
  "amazon": {
-  "MJX54J/A": false,
+  "MJX54J/A": true,
   "MJX64J/A": false,
   "MJX74J/A": false,
   "MJX84J/A": false,
@@ -76,10 +84,10 @@
   "MJXA4J/A": false,
   "MJXC4J/A": false,
   "MJXD4J/A": false,
-  "MJXE4J/A": true,
+  "MJXE4J/A": false,
   "MJXF4J/A": true,
   "MJXG4J/A": false,
-  "MJXH4J/A": true,
+  "MJXH4J/A": false,
   "MJR54J/A": false,
   "MJR64J/A": false,
   "MJR74J/A": false,
@@ -91,7 +99,13 @@
   "MJRF4J/A": false,
   "MJRG4J/A": false,
   "MJRH4J/A": false,
-  "MJRJ4J/A": false
+  "MJRJ4J/A": false,
+  "MK244J/A": false,
+  "MK254J/A": false,
+  "MK264J/A": false,
+  "MK274J/A": false,
+  "MK284J/A": false,
+  "MK294J/A": false
  },
  "stock_table_messages": {
   "Pro": "1557920163351896176",
@@ -104,7 +118,7 @@
    "msrp": 239800,
    "best": 228000,
    "shop": "買取BASE",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro Max 256GB シルバー",
@@ -168,7 +182,7 @@
    "msrp": 344800,
    "best": 338000,
    "shop": "買取BASE",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro Max 1TB シルバー",
@@ -192,102 +206,54 @@
    "msrp": 344800,
    "best": 338000,
    "shop": "買取BASE",
-   "amazon": true
-  },
-  {
-   "name": "Pro 256GB ブラック",
-   "part": "MJR54J/A",
-   "msrp": 219800,
-   "best": 200000,
-   "shop": "買取BASE",
    "amazon": false
   },
   {
-   "name": "Pro 256GB シルバー",
-   "part": "MJR64J/A",
-   "msrp": 219800,
-   "best": 198000,
-   "shop": "買取BASE",
+   "name": "Duo 256GB スターホワイト",
+   "part": "MK244J/A",
+   "msrp": 364800,
+   "best": 408000,
+   "shop": "PANDA買取",
    "amazon": false
   },
   {
-   "name": "Pro 256GB バーガンディ",
-   "part": "MJR74J/A",
-   "msrp": 219800,
-   "best": 210000,
-   "shop": "森森買取",
+   "name": "Duo 256GB ナイトスカイ",
+   "part": "MK254J/A",
+   "msrp": 364800,
+   "best": 408000,
+   "shop": "PANDA買取",
    "amazon": false
   },
   {
-   "name": "Pro 256GB グレイシャー",
-   "part": "MJR84J/A",
-   "msrp": 219800,
-   "best": 200000,
-   "shop": "買取BASE",
-   "amazon": true
-  },
-  {
-   "name": "Pro 512GB ブラック",
-   "part": "MJR94J/A",
-   "msrp": 254800,
-   "best": 236000,
-   "shop": "買取BASE",
+   "name": "Duo 512GB スターホワイト",
+   "part": "MK264J/A",
+   "msrp": 399800,
+   "best": 445000,
+   "shop": "携帯空間",
    "amazon": false
   },
   {
-   "name": "Pro 512GB シルバー",
-   "part": "MJRC4J/A",
-   "msrp": 254800,
-   "best": 232000,
-   "shop": "買取BASE",
-   "amazon": true
-  },
-  {
-   "name": "Pro 512GB バーガンディ",
-   "part": "MJRD4J/A",
-   "msrp": 254800,
-   "best": 245000,
-   "shop": "買取BASE",
+   "name": "Duo 512GB ナイトスカイ",
+   "part": "MK274J/A",
+   "msrp": 399800,
+   "best": 445000,
+   "shop": "携帯空間",
    "amazon": false
   },
   {
-   "name": "Pro 512GB グレイシャー",
-   "part": "MJRE4J/A",
-   "msrp": 254800,
-   "best": 236000,
-   "shop": "買取BASE",
+   "name": "Duo 1TB スターホワイト",
+   "part": "MK284J/A",
+   "msrp": 469800,
+   "best": 500000,
+   "shop": "携帯空間",
    "amazon": false
   },
   {
-   "name": "Pro 1TB ブラック",
-   "part": "MJRF4J/A",
-   "msrp": 324800,
-   "best": 300000,
-   "shop": "買取BASE",
-   "amazon": false
-  },
-  {
-   "name": "Pro 1TB シルバー",
-   "part": "MJRG4J/A",
-   "msrp": 324800,
-   "best": 300000,
-   "shop": "買取BASE",
-   "amazon": false
-  },
-  {
-   "name": "Pro 1TB バーガンディ",
-   "part": "MJRH4J/A",
-   "msrp": 324800,
-   "best": 314000,
-   "shop": "買取BASE",
-   "amazon": false
-  },
-  {
-   "name": "Pro 1TB グレイシャー",
-   "part": "MJRJ4J/A",
-   "msrp": 324800,
-   "best": 300000,
-   "shop": "買取BASE",
+   "name": "Duo 1TB ナイトスカイ",
+   "part": "MK294J/A",
+   "msrp": 469800,
+   "best": 500000,
+   "shop": "携帯空間",
    "amazon": false
   }
  ]
