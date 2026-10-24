@@ -17,10 +17,10 @@
    "銀座"
   ],
   "MJXC4J/A": [
-   "表参道"
+   "新宿"
   ],
   "MJXD4J/A": [
-   "銀座"
+   "丸の内"
   ],
   "MJXE4J/A": [
    "丸の内"
@@ -89,7 +89,7 @@
   "MJXE4J/A": false,
   "MJXF4J/A": false,
   "MJXG4J/A": false,
-  "MJXH4J/A": true,
+  "MJXH4J/A": false,
   "MJR54J/A": false,
   "MJR64J/A": false,
   "MJR74J/A": false,
@@ -208,7 +208,7 @@
    "msrp": 344800,
    "best": 336500,
    "shop": "買取BASE",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Duo 256GB スターホワイト",
