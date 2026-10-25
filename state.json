@@ -87,7 +87,7 @@
   "MJXC4J/A": false,
   "MJXD4J/A": false,
   "MJXE4J/A": false,
-  "MJXF4J/A": true,
+  "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": false,
   "MJR54J/A": false,
@@ -192,7 +192,7 @@
    "msrp": 344800,
    "best": 334000,
    "shop": "買取BASE",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro Max 1TB バーガンディ",
@@ -230,32 +230,32 @@
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 455000,
-   "shop": "買取wiki",
+   "best": 456000,
+   "shop": "ジェーシカモバイル",
    "amazon": false
   },
   {
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 455000,
-   "shop": "買取wiki",
+   "best": 456000,
+   "shop": "ジェーシカモバイル",
    "amazon": false
   },
   {
    "name": "Duo 1TB スターホワイト",
    "part": "MK284J/A",
    "msrp": 469800,
-   "best": 512000,
-   "shop": "買取wiki",
+   "best": 513000,
+   "shop": "ジェーシカモバイル",
    "amazon": false
   },
   {
    "name": "Duo 1TB ナイトスカイ",
    "part": "MK294J/A",
    "msrp": 469800,
-   "best": 512000,
-   "shop": "買取wiki",
+   "best": 513000,
+   "shop": "ジェーシカモバイル",
    "amazon": false
   }
  ]
