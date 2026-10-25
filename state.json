@@ -12,16 +12,20 @@
   "MJX84J/A": [
    "銀座"
   ],
-  "MJX94J/A": [],
+  "MJX94J/A": [
+   "銀座"
+  ],
   "MJXA4J/A": [
    "銀座"
   ],
-  "MJXC4J/A": [],
+  "MJXC4J/A": [
+   "銀座"
+  ],
   "MJXD4J/A": [
-   "丸の内"
+   "銀座"
   ],
   "MJXE4J/A": [
-   "丸の内"
+   "銀座"
   ],
   "MJXF4J/A": [
    "銀座"
@@ -85,7 +89,7 @@
   "MJXC4J/A": false,
   "MJXD4J/A": false,
   "MJXE4J/A": false,
-  "MJXF4J/A": true,
+  "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": false,
   "MJR54J/A": false,
@@ -190,7 +194,7 @@
    "msrp": 344800,
    "best": 332500,
    "shop": "買取BASE",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro Max 1TB バーガンディ",
