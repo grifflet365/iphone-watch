@@ -15,6 +15,7 @@ import os
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urlsplit, urlunsplit
@@ -29,6 +30,8 @@ KANTO_STATES = {"東京都", "神奈川県", "埼玉県", "千葉県"}
 TARGET_MODELS = ("Pro Max", "Duo")  # 通知対象の機種(18 Pro は対象外)
 TARGET_CAPACITIES = ("256GB", "512GB", "1TB")  # 通知対象の容量(全色)
 STATE_FILE = Path(__file__).with_name("state.json")  # cmd_price は state_price.json に差し替える(価格と在庫で書き込みが衝突しないように)
+LOG_FILE = Path(__file__).with_name("restock_log.jsonl")  # 入荷・売り切れの履歴(出やすい時間帯の分析用)
+MENTION = os.environ.get("DISCORD_MENTION", "@everyone")  # 入荷通知の頭に付ける(空なら付けない)
 WEBHOOK = os.environ.get("DISCORD_WEBHOOK_URL", "")
 FAIL_NOTIFY_AFTER = 5  # 連続失敗がこの回数に達したら1回だけ知らせる
 STORES = ("銀座", "丸の内", "表参道", "渋谷", "新宿", "川崎")
@@ -131,23 +134,34 @@ def fetch_prices():
     return rows
 
 
+def _apple_one(p):
+    r = requests.get(
+        APPLE_URL, headers={**UA, "x-requested-with": "XMLHttpRequest"}, timeout=30,
+        params={"fae": "true", "mts.0": "regular", "mts.1": "compact",
+                "searchNearby": "true", "product": p, "location": APPLE_LOCATION})
+    r.raise_for_status()
+    return r.json()["body"]["PickupMessage"]["stores"]
+
+
 def fetch_apple_stock(parts):
-    """{型番: [店舗名,...]} 受け取り可能な1都3県の直営店"""
+    """{型番: {店舗名,...}} 受け取り可能な1都3県の直営店(型番ごとの問い合わせを並列で実行)"""
     stock = {p: set() for p in parts}
-    for p in parts:
-        r = requests.get(
-            APPLE_URL, headers={**UA, "x-requested-with": "XMLHttpRequest"}, timeout=30,
-            params={"fae": "true", "mts.0": "regular", "mts.1": "compact",
-                    "searchNearby": "true", "product": p, "location": APPLE_LOCATION})
-        r.raise_for_status()
-        for s in r.json()["body"]["PickupMessage"]["stores"]:
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        results = list(ex.map(_apple_one, parts))
+    for stores in results:
+        for s in stores:
             if s["state"] not in KANTO_STATES:
                 continue
             for part, info in s["partsAvailability"].items():
                 if part in stock and info.get("storePickEligible"):
                     stock[part].add(s["storeName"])
-        time.sleep(0.3)
     return stock
+
+
+def log_event(**ev):
+    ev["at"] = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(time.time() + 9 * 3600))  # JST
+    with LOG_FILE.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(ev, ensure_ascii=False) + "\n")
 
 
 def diff_text(r):
@@ -179,6 +193,7 @@ def cmd_stock(args):
     state = load_state()
     seen = {k: set(v) for k, v in state.get("apple", {}).items()}
     amz_seen = state.get("amazon", {})
+    since = state.get("since", {})  # "型番|店舗" -> 在庫が見えた時刻(epoch)。None=監視開始時点で既にあり(継続時間は不明)
     end = time.time() + args.minutes * 60
     fails, notified_fail, n = 0, False, 0
     rows = state.get("stock_table_rows", [])
@@ -192,11 +207,21 @@ def cmd_stock(args):
             update_stock_table(state, rows, apple)
             fails, notified_fail = 0, False
             first_run = not seen
+            now = time.time()
             for r in rows:
-                new_stores = apple[r["part"]] - seen.get(r["part"], set())
+                old = seen.get(r["part"], set())
+                new_stores = apple[r["part"]] - old
+                for st in new_stores:
+                    since[f"{r['part']}|{st}"] = None if first_run else now
+                    if not first_run:
+                        log_event(event="appear", part=r["part"], model=r["name"], store=st)
+                for st in old - apple[r["part"]]:  # 売り切れ
+                    t0 = since.pop(f"{r['part']}|{st}", None)
+                    log_event(event="gone", part=r["part"], model=r["name"], store=st,
+                              seconds=round(now - t0) if t0 else None)
                 if new_stores and not first_run:
-                    send(f"🍎 **Apple入荷** {r['name']}\n受取: {'、'.join(sorted(new_stores))}\n{diff_text(r)}\n"
-                         f"https://www.apple.com/jp/shop/buy-iphone/iphone-18-pro")
+                    send(f"{MENTION} 🍎 **Apple入荷** {r['name']}\n受取: {'、'.join(sorted(new_stores))}\n{diff_text(r)}\n"
+                         f"https://www.apple.com/jp/shop/product/{r['part']}")
                 seen[r["part"]] = apple[r["part"]]
                 if n % 5 == 0 and r["amazon"] is not None:
                     if r["amazon"] and not amz_seen.get(r["part"]) and amz_seen:
@@ -218,6 +243,7 @@ def cmd_stock(args):
         time.sleep(args.interval)
     state["apple"] = {k: sorted(v) for k, v in seen.items()}
     state["amazon"] = amz_seen
+    state["since"] = since
     save_state(state)
 
 
