@@ -21,18 +21,16 @@
   "MJXC4J/A": [
    "銀座"
   ],
-  "MJXD4J/A": [
-   "渋谷"
-  ],
+  "MJXD4J/A": [],
   "MJXE4J/A": [
-   "丸の内"
+   "渋谷"
   ],
   "MJXF4J/A": [
    "銀座"
   ],
   "MJXG4J/A": [],
   "MJXH4J/A": [
-   "丸の内"
+   "渋谷"
   ],
   "MJR54J/A": [
    "銀座"
@@ -81,7 +79,7 @@
   "MJX54J/A": false,
   "MJX64J/A": false,
   "MJX74J/A": false,
-  "MJX84J/A": true,
+  "MJX84J/A": false,
   "MJX94J/A": false,
   "MJXA4J/A": false,
   "MJXC4J/A": false,
@@ -144,7 +142,7 @@
    "msrp": 239800,
    "best": 237500,
    "shop": "買取BASE",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro Max 512GB ブラック",
@@ -214,7 +212,7 @@
    "name": "Duo 256GB スターホワイト",
    "part": "MK244J/A",
    "msrp": 364800,
-   "best": 423500,
+   "best": 427000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -222,7 +220,7 @@
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 423500,
+   "best": 427000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -230,32 +228,32 @@
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 462500,
-   "shop": "アキモバ",
+   "best": 469000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 462500,
-   "shop": "アキモバ",
+   "best": 469000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Duo 1TB スターホワイト",
    "part": "MK284J/A",
    "msrp": 469800,
-   "best": 520000,
-   "shop": "買取ホムラ",
+   "best": 528000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Duo 1TB ナイトスカイ",
    "part": "MK294J/A",
    "msrp": 469800,
-   "best": 520000,
-   "shop": "買取ホムラ",
+   "best": 528000,
+   "shop": "買取BASE",
    "amazon": false
   }
  ]
