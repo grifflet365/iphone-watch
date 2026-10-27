@@ -9,3 +9,5 @@
 {"event": "gone", "part": "MJXG4J/A", "model": "Pro Max 1TB バーガンディ", "store": "銀座", "seconds": 17887, "at": "2026-10-27 14:57:22"}
 {"event": "appear", "part": "MJXH4J/A", "model": "Pro Max 1TB グレイシャー", "store": "川崎", "at": "2026-10-27 14:57:22"}
 {"event": "gone", "part": "MJXH4J/A", "model": "Pro Max 1TB グレイシャー", "store": "丸の内", "seconds": 17887, "at": "2026-10-27 14:57:22"}
+{"event": "appear", "part": "MJX84J/A", "model": "Pro Max 256GB グレイシャー", "store": "表参道", "at": "2026-10-27 20:46:49"}
+{"event": "gone", "part": "MJX84J/A", "model": "Pro Max 256GB グレイシャー", "store": "銀座", "seconds": null, "at": "2026-10-27 20:46:49"}
