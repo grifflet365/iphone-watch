@@ -13,26 +13,22 @@
    "銀座"
   ],
   "MJX94J/A": [
-   "銀座"
+   "丸の内"
   ],
   "MJXA4J/A": [
    "銀座"
   ],
-  "MJXC4J/A": [
-   "表参道"
-  ],
+  "MJXC4J/A": [],
   "MJXD4J/A": [],
   "MJXE4J/A": [
-   "渋谷"
+   "川崎"
   ],
   "MJXF4J/A": [
    "銀座"
   ],
-  "MJXG4J/A": [
-   "銀座"
-  ],
+  "MJXG4J/A": [],
   "MJXH4J/A": [
-   "丸の内"
+   "川崎"
   ],
   "MJR54J/A": [
    "銀座"
@@ -87,7 +83,7 @@
   "MJXC4J/A": false,
   "MJXD4J/A": false,
   "MJXE4J/A": false,
-  "MJXF4J/A": true,
+  "MJXF4J/A": false,
   "MJXG4J/A": false,
   "MJXH4J/A": false,
   "MJR54J/A": false,
@@ -118,7 +114,7 @@
    "name": "Pro Max 256GB ブラック",
    "part": "MJX54J/A",
    "msrp": 239800,
-   "best": 231000,
+   "best": 230000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -126,15 +122,15 @@
    "name": "Pro Max 256GB シルバー",
    "part": "MJX64J/A",
    "msrp": 239800,
-   "best": 228500,
-   "shop": "買取BASE",
+   "best": 227000,
+   "shop": "アバウテック",
    "amazon": false
   },
   {
    "name": "Pro Max 256GB バーガンディ",
    "part": "MJX74J/A",
    "msrp": 239800,
-   "best": 243500,
+   "best": 241500,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -142,7 +138,7 @@
    "name": "Pro Max 256GB グレイシャー",
    "part": "MJX84J/A",
    "msrp": 239800,
-   "best": 237500,
+   "best": 237000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -150,7 +146,7 @@
    "name": "Pro Max 512GB ブラック",
    "part": "MJX94J/A",
    "msrp": 274800,
-   "best": 271000,
+   "best": 270000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -158,7 +154,7 @@
    "name": "Pro Max 512GB シルバー",
    "part": "MJXA4J/A",
    "msrp": 274800,
-   "best": 268000,
+   "best": 267000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -166,7 +162,7 @@
    "name": "Pro Max 512GB バーガンディ",
    "part": "MJXC4J/A",
    "msrp": 274800,
-   "best": 281000,
+   "best": 280000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -174,7 +170,7 @@
    "name": "Pro Max 512GB グレイシャー",
    "part": "MJXD4J/A",
    "msrp": 274800,
-   "best": 272000,
+   "best": 271000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -182,7 +178,7 @@
    "name": "Pro Max 1TB ブラック",
    "part": "MJXE4J/A",
    "msrp": 344800,
-   "best": 340000,
+   "best": 338000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -190,15 +186,15 @@
    "name": "Pro Max 1TB シルバー",
    "part": "MJXF4J/A",
    "msrp": 344800,
-   "best": 336000,
+   "best": 334000,
    "shop": "買取BASE",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro Max 1TB バーガンディ",
    "part": "MJXG4J/A",
    "msrp": 344800,
-   "best": 351000,
+   "best": 349000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -206,7 +202,7 @@
    "name": "Pro Max 1TB グレイシャー",
    "part": "MJXH4J/A",
    "msrp": 344800,
-   "best": 340000,
+   "best": 338000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -214,23 +210,23 @@
    "name": "Duo 256GB スターホワイト",
    "part": "MK244J/A",
    "msrp": 364800,
-   "best": 427000,
-   "shop": "買取BASE",
+   "best": 372500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 427000,
-   "shop": "買取BASE",
+   "best": 387500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 469000,
+   "best": 453000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -238,7 +234,7 @@
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 469000,
+   "best": 453000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -246,21 +242,22 @@
    "name": "Duo 1TB スターホワイト",
    "part": "MK284J/A",
    "msrp": 469800,
-   "best": 528000,
-   "shop": "買取BASE",
+   "best": 525000,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Duo 1TB ナイトスカイ",
    "part": "MK294J/A",
    "msrp": 469800,
-   "best": 528000,
-   "shop": "買取BASE",
+   "best": 525000,
+   "shop": "ハチ買取",
    "amazon": false
   }
  ],
  "since": {
-  "MJXG4J/A|銀座": 1793062755.6598396,
-  "MJXH4J/A|丸の内": 1793062755.6598396
+  "MJX94J/A|丸の内": 1793080642.1686337,
+  "MJXE4J/A|川崎": 1793080642.1686337,
+  "MJXH4J/A|川崎": 1793080642.1686337
  }
 }
