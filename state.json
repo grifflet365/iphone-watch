@@ -10,25 +10,21 @@
    "銀座"
   ],
   "MJX84J/A": [
-   "丸の内"
+   "表参道"
   ],
   "MJX94J/A": [
-   "丸の内"
+   "渋谷"
   ],
   "MJXA4J/A": [
    "銀座"
   ],
   "MJXC4J/A": [],
   "MJXD4J/A": [],
-  "MJXE4J/A": [
-   "川崎"
-  ],
+  "MJXE4J/A": [],
   "MJXF4J/A": [
    "銀座"
   ],
-  "MJXG4J/A": [
-   "川崎"
-  ],
+  "MJXG4J/A": [],
   "MJXH4J/A": [
    "川崎"
   ],
@@ -116,16 +112,16 @@
    "name": "Pro Max 256GB ブラック",
    "part": "MJX54J/A",
    "msrp": 239800,
-   "best": 229500,
-   "shop": "買取ソムリエ",
+   "best": 229000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Pro Max 256GB シルバー",
    "part": "MJX64J/A",
    "msrp": 239800,
-   "best": 227000,
-   "shop": "買取ソムリエ",
+   "best": 226500,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
@@ -141,7 +137,7 @@
    "part": "MJX84J/A",
    "msrp": 239800,
    "best": 237000,
-   "shop": "買取商店",
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
@@ -172,7 +168,7 @@
    "name": "Pro Max 512GB グレイシャー",
    "part": "MJXD4J/A",
    "msrp": 274800,
-   "best": 270000,
+   "best": 270500,
    "shop": "買取ソムリエ",
    "amazon": false
   },
@@ -180,88 +176,86 @@
    "name": "Pro Max 1TB ブラック",
    "part": "MJXE4J/A",
    "msrp": 344800,
-   "best": 338000,
-   "shop": "ハチ買取",
+   "best": 337500,
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
    "name": "Pro Max 1TB シルバー",
    "part": "MJXF4J/A",
    "msrp": 344800,
-   "best": 334000,
-   "shop": "ハチ買取",
+   "best": 333000,
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
    "name": "Pro Max 1TB バーガンディ",
    "part": "MJXG4J/A",
    "msrp": 344800,
-   "best": 349000,
-   "shop": "ハチ買取",
+   "best": 348000,
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
    "name": "Pro Max 1TB グレイシャー",
    "part": "MJXH4J/A",
    "msrp": 344800,
-   "best": 338000,
-   "shop": "ハチ買取",
+   "best": 337500,
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
    "name": "Duo 256GB スターホワイト",
    "part": "MK244J/A",
    "msrp": 364800,
-   "best": 369000,
-   "shop": "ジェーシカモバイル",
+   "best": 368000,
+   "shop": "買取オク",
    "amazon": false
   },
   {
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 371500,
-   "shop": "買取ソムリエ",
+   "best": 376000,
+   "shop": "買取オク",
    "amazon": false
   },
   {
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 406000,
-   "shop": "ハチ買取",
+   "best": 407000,
+   "shop": "買取オク",
    "amazon": false
   },
   {
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 416000,
-   "shop": "ハチ買取",
+   "best": 417000,
+   "shop": "買取オク",
    "amazon": false
   },
   {
    "name": "Duo 1TB スターホワイト",
    "part": "MK284J/A",
    "msrp": 469800,
-   "best": 490000,
-   "shop": "PANDA買取",
+   "best": 490500,
+   "shop": "買取オク",
    "amazon": false
   },
   {
    "name": "Duo 1TB ナイトスカイ",
    "part": "MK294J/A",
    "msrp": 469800,
-   "best": 492000,
-   "shop": "ハチ買取",
+   "best": 493000,
+   "shop": "買取オク",
    "amazon": false
   }
  ],
  "since": {
-  "MJX94J/A|丸の内": 1793080642.1686337,
-  "MJXE4J/A|川崎": 1793080642.1686337,
-  "MJXG4J/A|川崎": 1793149133.6408427,
-  "MJX84J/A|丸の内": 1793169359.900041,
-  "MJXH4J/A|川崎": 1793169359.900041
+  "MJXH4J/A|川崎": 1793169359.900041,
+  "MJX84J/A|表参道": 1793194372.8161547,
+  "MJX94J/A|渋谷": 1793194372.8161547
  }
 }
