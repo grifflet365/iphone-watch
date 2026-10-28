@@ -41,5 +41,20 @@ jobs:
           test -f state.json || exit 0
           git config user.name "watch-bot"
           git config user.email "watch-bot@users.noreply.github.com"
-          git add state.json restock_log.jsonl
-          git diff --cached --quiet || (git commit -m "update state" && git pull --rebase && git push)
+          # 他の実行と衝突しないよう、最新を取り直してから自分の結果を載せる
+          cp state.json "$RUNNER_TEMP/state.json"
+          cp restock_log.jsonl "$RUNNER_TEMP/log.jsonl" 2>/dev/null || true
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp "$RUNNER_TEMP/state.json" state.json
+            # 履歴は両方の行を合わせ、重複を除く(先に保存された分を残す)
+            cat restock_log.jsonl "$RUNNER_TEMP/log.jsonl" 2>/dev/null | awk '!seen[$0]++' > "$RUNNER_TEMP/merged.jsonl" || true
+            [ -s "$RUNNER_TEMP/merged.jsonl" ] && cp "$RUNNER_TEMP/merged.jsonl" restock_log.jsonl
+            git add state.json restock_log.jsonl
+            git diff --cached --quiet && exit 0
+            git commit -m "update state"
+            git push && exit 0
+            sleep $((i * 3))
+          done
+          echo "状態の保存に失敗しました"; exit 1
