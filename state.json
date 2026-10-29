@@ -10,11 +10,9 @@
    "銀座"
   ],
   "MJX84J/A": [
-   "銀座"
+   "表参道"
   ],
-  "MJX94J/A": [
-   "渋谷"
-  ],
+  "MJX94J/A": [],
   "MJXA4J/A": [
    "銀座"
   ],
@@ -121,7 +119,7 @@
    "part": "MJX64J/A",
    "msrp": 239800,
    "best": 226500,
-   "shop": "買取BASE",
+   "shop": "携帯空間",
    "amazon": false
   },
   {
@@ -168,8 +166,8 @@
    "name": "Pro Max 512GB グレイシャー",
    "part": "MJXD4J/A",
    "msrp": 274800,
-   "best": 272000,
-   "shop": "PANDA買取",
+   "best": 271500,
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
@@ -192,8 +190,8 @@
    "name": "Pro Max 1TB バーガンディ",
    "part": "MJXG4J/A",
    "msrp": 344800,
-   "best": 347000,
-   "shop": "家電市場",
+   "best": 345500,
+   "shop": "買取ルデヤ",
    "amazon": false
   },
   {
@@ -209,7 +207,7 @@
    "part": "MK244J/A",
    "msrp": 364800,
    "best": 376000,
-   "shop": "携帯空間",
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
@@ -232,8 +230,8 @@
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 427000,
-   "shop": "ハチ買取",
+   "best": 426000,
+   "shop": "家電市場",
    "amazon": false
   },
   {
@@ -241,7 +239,7 @@
    "part": "MK284J/A",
    "msrp": 469800,
    "best": 503500,
-   "shop": "買取ソムリエ",
+   "shop": "携帯空間",
    "amazon": false
   },
   {
@@ -249,13 +247,12 @@
    "part": "MK294J/A",
    "msrp": 469800,
    "best": 507000,
-   "shop": "買取ソムリエ",
+   "shop": "携帯空間",
    "amazon": false
   }
  ],
  "since": {
-  "MJX94J/A|渋谷": 1793194372.8161547,
-  "MJX84J/A|銀座": 1793235582.4852839,
-  "MJXH4J/A|川崎": 1793256226.823131
+  "MJXH4J/A|川崎": 1793256226.823131,
+  "MJX84J/A|表参道": 1793281500.008062
  }
 }
