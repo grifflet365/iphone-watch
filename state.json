@@ -120,8 +120,8 @@
    "name": "Pro Max 256GB シルバー",
    "part": "MJX64J/A",
    "msrp": 239800,
-   "best": 226500,
-   "shop": "携帯空間",
+   "best": 226000,
+   "shop": "買取ルデヤ",
    "amazon": false
   },
   {
@@ -192,16 +192,16 @@
    "name": "Pro Max 1TB バーガンディ",
    "part": "MJXG4J/A",
    "msrp": 344800,
-   "best": 342000,
-   "shop": "ハチ買取",
+   "best": 341500,
+   "shop": "買取ルデヤ",
    "amazon": false
   },
   {
    "name": "Pro Max 1TB グレイシャー",
    "part": "MJXH4J/A",
    "msrp": 344800,
-   "best": 336000,
-   "shop": "家電市場",
+   "best": 330500,
+   "shop": "買取ルデヤ",
    "amazon": false
   },
   {
@@ -216,8 +216,8 @@
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 380000,
-   "shop": "ゲストモバイル",
+   "best": 373000,
+   "shop": "ジェーシカモバイル",
    "amazon": false
   },
   {
@@ -232,15 +232,15 @@
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 429000,
-   "shop": "ハチ買取",
+   "best": 428000,
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
    "name": "Duo 1TB スターホワイト",
    "part": "MK284J/A",
    "msrp": 469800,
-   "best": 508000,
+   "best": 509000,
    "shop": "買取オク",
    "amazon": false
   },
@@ -248,7 +248,7 @@
    "name": "Duo 1TB ナイトスカイ",
    "part": "MK294J/A",
    "msrp": 469800,
-   "best": 513000,
+   "best": 514000,
    "shop": "買取オク",
    "amazon": false
   }
