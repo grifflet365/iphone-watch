@@ -13,7 +13,7 @@
    "川崎"
   ],
   "MJX94J/A": [
-   "銀座"
+   "表参道"
   ],
   "MJXA4J/A": [
    "銀座"
@@ -21,19 +21,15 @@
   "MJXC4J/A": [
    "銀座"
   ],
-  "MJXD4J/A": [
-   "表参道"
-  ],
+  "MJXD4J/A": [],
   "MJXE4J/A": [
-   "丸の内"
+   "表参道"
   ],
   "MJXF4J/A": [
    "銀座"
   ],
   "MJXG4J/A": [],
-  "MJXH4J/A": [
-   "表参道"
-  ],
+  "MJXH4J/A": [],
   "MJR54J/A": [
    "銀座"
   ],
@@ -78,7 +74,7 @@
   "MK294J/A": []
  },
  "amazon": {
-  "MJX54J/A": true,
+  "MJX54J/A": false,
   "MJX64J/A": false,
   "MJX74J/A": false,
   "MJX84J/A": false,
@@ -120,7 +116,7 @@
    "msrp": 239800,
    "best": 225000,
    "shop": "買取BASE",
-   "amazon": true
+   "amazon": false
   },
   {
    "name": "Pro Max 256GB シルバー",
@@ -214,32 +210,32 @@
    "name": "Duo 256GB スターホワイト",
    "part": "MK244J/A",
    "msrp": 364800,
-   "best": 373500,
-   "shop": "携帯空間",
+   "best": 375000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 377000,
-   "shop": "買取ソムリエ",
+   "best": 380000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 423000,
-   "shop": "買取BASE",
+   "best": 426000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 428000,
-   "shop": "買取BASE",
+   "best": 431000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
@@ -260,11 +256,9 @@
   }
  ],
  "since": {
-  "MJX94J/A|銀座": 1793663575.743574,
   "MJXC4J/A|銀座": 1793663575.743574,
   "MJX84J/A|川崎": 1793691091.9000769,
-  "MJXD4J/A|表参道": 1793691091.9000769,
-  "MJXE4J/A|丸の内": 1793691091.9000769,
-  "MJXH4J/A|表参道": 1793691091.9000769
+  "MJX94J/A|表参道": 1793719708.6906352,
+  "MJXE4J/A|表参道": 1793719708.6906352
  }
 }
