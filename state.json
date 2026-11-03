@@ -10,7 +10,7 @@
    "銀座"
   ],
   "MJX84J/A": [
-   "表参道"
+   "川崎"
   ],
   "MJX94J/A": [
    "銀座"
@@ -22,17 +22,17 @@
    "銀座"
   ],
   "MJXD4J/A": [
-   "銀座"
+   "表参道"
   ],
   "MJXE4J/A": [
-   "銀座"
+   "丸の内"
   ],
   "MJXF4J/A": [
    "銀座"
   ],
   "MJXG4J/A": [],
   "MJXH4J/A": [
-   "丸の内"
+   "表参道"
   ],
   "MJR54J/A": [
    "銀座"
@@ -78,7 +78,7 @@
   "MK294J/A": []
  },
  "amazon": {
-  "MJX54J/A": false,
+  "MJX54J/A": true,
   "MJX64J/A": false,
   "MJX74J/A": false,
   "MJX84J/A": false,
@@ -120,14 +120,14 @@
    "msrp": 239800,
    "best": 225000,
    "shop": "買取BASE",
-   "amazon": false
+   "amazon": true
   },
   {
    "name": "Pro Max 256GB シルバー",
    "part": "MJX64J/A",
    "msrp": 239800,
    "best": 223000,
-   "shop": "買取ソムリエ",
+   "shop": "森森買取",
    "amazon": false
   },
   {
@@ -151,7 +151,7 @@
    "part": "MJX94J/A",
    "msrp": 274800,
    "best": 261000,
-   "shop": "買取BASE",
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
@@ -159,7 +159,7 @@
    "part": "MJXA4J/A",
    "msrp": 274800,
    "best": 260000,
-   "shop": "アバウテック",
+   "shop": "森森買取",
    "amazon": false
   },
   {
@@ -174,8 +174,8 @@
    "name": "Pro Max 512GB グレイシャー",
    "part": "MJXD4J/A",
    "msrp": 274800,
-   "best": 265000,
-   "shop": "家電市場",
+   "best": 264000,
+   "shop": "森森買取",
    "amazon": false
   },
   {
@@ -222,7 +222,7 @@
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 376000,
+   "best": 377000,
    "shop": "買取ソムリエ",
    "amazon": false
   },
@@ -230,16 +230,16 @@
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 419500,
-   "shop": "携帯空間",
+   "best": 423000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 423000,
-   "shop": "買取ソムリエ",
+   "best": 428000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
@@ -262,9 +262,9 @@
  "since": {
   "MJX94J/A|銀座": 1793663575.743574,
   "MJXC4J/A|銀座": 1793663575.743574,
-  "MJXD4J/A|銀座": 1793663575.743574,
-  "MJXE4J/A|銀座": 1793663575.743574,
-  "MJX84J/A|表参道": 1793672947.0217016,
-  "MJXH4J/A|丸の内": 1793672947.0217016
+  "MJX84J/A|川崎": 1793691091.9000769,
+  "MJXD4J/A|表参道": 1793691091.9000769,
+  "MJXE4J/A|丸の内": 1793691091.9000769,
+  "MJXH4J/A|表参道": 1793691091.9000769
  }
 }
