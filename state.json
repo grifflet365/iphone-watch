@@ -21,11 +21,9 @@
   "MJXC4J/A": [
    "銀座"
   ],
-  "MJXD4J/A": [
-   "渋谷"
-  ],
+  "MJXD4J/A": [],
   "MJXE4J/A": [
-   "銀座"
+   "表参道"
   ],
   "MJXF4J/A": [
    "銀座"
@@ -120,32 +118,32 @@
    "name": "Pro Max 256GB ブラック",
    "part": "MJX54J/A",
    "msrp": 239800,
-   "best": 224000,
-   "shop": "森森買取",
+   "best": 229000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Pro Max 256GB シルバー",
    "part": "MJX64J/A",
    "msrp": 239800,
-   "best": 223000,
-   "shop": "森森買取",
+   "best": 228000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Pro Max 256GB バーガンディ",
    "part": "MJX74J/A",
    "msrp": 239800,
-   "best": 233000,
-   "shop": "買取BASE",
+   "best": 237000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Pro Max 256GB グレイシャー",
    "part": "MJX84J/A",
    "msrp": 239800,
-   "best": 227000,
-   "shop": "森森買取",
+   "best": 232000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
@@ -216,58 +214,57 @@
    "name": "Duo 256GB スターホワイト",
    "part": "MK244J/A",
    "msrp": 364800,
-   "best": 374000,
-   "shop": "買取BASE",
+   "best": 381000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 379000,
-   "shop": "買取BASE",
+   "best": 386000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 426000,
-   "shop": "森森買取",
+   "best": 431000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 431000,
-   "shop": "森森買取",
+   "best": 436000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Duo 1TB スターホワイト",
    "part": "MK284J/A",
    "msrp": 469800,
-   "best": 505000,
-   "shop": "買取オク",
+   "best": 510000,
+   "shop": "モバイルミックス",
    "amazon": false
   },
   {
    "name": "Duo 1TB ナイトスカイ",
    "part": "MK294J/A",
    "msrp": 469800,
-   "best": 505000,
-   "shop": "買取オク",
+   "best": 510000,
+   "shop": "モバイルミックス",
    "amazon": false
   }
  ],
  "since": {
   "MJXC4J/A|銀座": 1793663575.743574,
   "MJX94J/A|銀座": 1793753982.8863149,
-  "MJXE4J/A|銀座": 1793753982.8863149,
   "MJXG4J/A|銀座": 1793753982.8863149,
   "MJX84J/A|川崎": 1793776372.710214,
-  "MJXD4J/A|渋谷": 1793776372.710214,
-  "MJXH4J/A|表参道": 1793776372.710214
+  "MJXH4J/A|表参道": 1793776372.710214,
+  "MJXE4J/A|表参道": 1793806029.2551532
  }
 }

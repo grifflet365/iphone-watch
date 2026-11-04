@@ -775,3 +775,6 @@
 {"event": "gone", "part": "MJXD4J/A", "model": "Pro Max 512GB グレイシャー", "store": "銀座", "seconds": 22390, "at": "2026-11-04 16:12:53"}
 {"event": "appear", "part": "MJXH4J/A", "model": "Pro Max 1TB グレイシャー", "store": "表参道", "at": "2026-11-04 16:12:53"}
 {"event": "gone", "part": "MJXH4J/A", "model": "Pro Max 1TB グレイシャー", "store": "銀座", "seconds": 22390, "at": "2026-11-04 16:12:53"}
+{"event": "gone", "part": "MJXD4J/A", "model": "Pro Max 512GB グレイシャー", "store": "渋谷", "seconds": 29657, "at": "2026-11-05 00:27:09"}
+{"event": "appear", "part": "MJXE4J/A", "model": "Pro Max 1TB ブラック", "store": "表参道", "at": "2026-11-05 00:27:09"}
+{"event": "gone", "part": "MJXE4J/A", "model": "Pro Max 1TB ブラック", "store": "銀座", "seconds": 52046, "at": "2026-11-05 00:27:09"}
