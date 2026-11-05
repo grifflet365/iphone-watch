@@ -27,15 +27,16 @@ KAITORIX_URL = "https://kaitorix.app/series/iphone-18"
 APPLE_URL = "https://www.apple.com/jp/shop/pickup-message-recommendations"
 APPLE_LOCATION = "104-0061"  # 銀座。近隣の都内5店+川崎が返る
 KANTO_STATES = {"東京都", "神奈川県", "埼玉県", "千葉県"}
-TARGET_MODELS = ("Pro Max", "Duo")  # 通知対象の機種(18 Pro は対象外)
-TARGET_CAPACITIES = ("256GB", "512GB", "1TB")  # 通知対象の容量(全色)
+TARGET_MODELS = ("Duo",)  # 通知対象の機種(18 Pro / Pro Max は買取が定価割れのため対象外)
+TARGET_CAPACITIES = ("256GB", "512GB", "1TB", "2TB")  # 通知対象の容量(全色)
 STATE_FILE = Path(__file__).with_name("state.json")  # cmd_price は state_price.json に差し替える(価格と在庫で書き込みが衝突しないように)
 LOG_FILE = Path(__file__).with_name("restock_log.jsonl")  # 入荷・売り切れの履歴(出やすい時間帯の分析用)
 MENTION = os.environ.get("DISCORD_MENTION", "@everyone")  # 入荷通知の頭に付ける(空なら付けない)
 WEBHOOK = os.environ.get("DISCORD_WEBHOOK_URL", "")
 FAIL_NOTIFY_AFTER = 5  # 連続失敗がこの回数に達したら1回だけ知らせる
 STORES = ("銀座", "丸の内", "表参道", "渋谷", "新宿", "川崎")
-COLORS = ("ブラック", "シルバー", "バーガンディ", "グレイシャー")
+COLORS = {"スターホワイト": "白", "ナイトスカイ": "夜"}  # 表示用の短縮名
+DUO_URL = "<https://www.apple.com/jp/shop/buy-iphone/iphone-duo>"  # <>でDiscordのリンクプレビューを抑止
 
 
 def discord_request(method, url, **kwargs):
@@ -48,40 +49,87 @@ def discord_request(method, url, **kwargs):
     return response
 
 
-def update_stock_table(state, rows, apple=None, error=False):
-    """モデル別の固定メッセージを編集。候補にない組み合わせは不明。"""
-    timestamp = datetime.now(timezone(timedelta(hours=9))).strftime("%m/%d %H:%M:%S JST")
-    by_name = {row["name"]: row["part"] for row in rows}
+def upsert_message(state, key, text):
+    """Discordの固定メッセージを編集(なければ作成してIDを保存)。webhook未設定なら画面表示のみ。"""
+    if not WEBHOOK:
+        print(text, flush=True)
+        return
     ids = state.setdefault("stock_table_messages", {})
     base = urlsplit(WEBHOOK)
-    for model in ("Pro", "Pro Max"):
-        lines = ["容量 / 色 | 銀 丸 表 渋 新 川", "---------------------------"]
-        for capacity in TARGET_CAPACITIES:
-            for color in COLORS:
-                part = by_name.get(f"{model} {capacity} {color}")
-                available = apple.get(part, set()) if apple is not None else set()
-                cells = " ".join("○" if store in available else "？" for store in STORES)
-                lines.append(f"{capacity} {color} | {cells}")
-        text = (f"🍎 **iPhone 18 {model} 店舗受け取り在庫**\n"
-                f"更新: {timestamp}" + (" ⚠ 取得失敗" if error else "") + "\n"
-                "銀=銀座 丸=丸の内 表=表参道 渋=渋谷 新=新宿 川=川崎\n"
-                "○=受け取り可能　？=未確認・候補なし・取得失敗\n"
-                "```text\n" + "\n".join(lines) + "\n```\n"
-                "https://www.apple.com/jp/shop/buy-iphone/iphone-18-pro")
-        if not WEBHOOK:
-            print(text, flush=True)
-            continue
-        payload = {"content": text, "allowed_mentions": {"parse": []}}
-        if ids.get(model):
-            url = urlunsplit(base._replace(path=base.path.rstrip("/") + "/messages/" + ids[model]))
-            response = discord_request("PATCH", url, json=payload)
-            if response.status_code != 404:
-                response.raise_for_status()
-                continue
-        response = discord_request("POST", WEBHOOK, params={"wait": "true"}, json=payload)
-        response.raise_for_status()
-        ids[model] = response.json()["id"]
-        save_state(state)  # 初回作成直後にID保存。以降は同じメッセージを編集
+    payload = {"content": text, "allowed_mentions": {"parse": []}}
+    if ids.get(key):
+        url = urlunsplit(base._replace(path=base.path.rstrip("/") + "/messages/" + ids[key]))
+        response = discord_request("PATCH", url, json=payload)
+        if response.status_code != 404:
+            response.raise_for_status()
+            return
+    response = discord_request("POST", WEBHOOK, params={"wait": "true"}, json=payload)
+    response.raise_for_status()
+    ids[key] = response.json()["id"]
+    save_state(state)  # 作成直後にID保存。以降は同じメッセージを編集
+
+
+def retire_old_messages(state):
+    """旧形式の固定メッセージ(Pro / Pro Max の在庫表)を、終了の案内に1回だけ書き換える。"""
+    ids = state.get("stock_table_messages", {})
+    for key in ("Pro", "Pro Max"):
+        if WEBHOOK and ids.get(key):
+            base = urlsplit(WEBHOOK)
+            url = urlunsplit(base._replace(path=base.path.rstrip("/") + "/messages/" + ids[key]))
+            discord_request("PATCH", url, json={"content": "(この表は終了しました。iPhone Duo の表を見てください)",
+                                                "allowed_mentions": {"parse": []}})
+        ids.pop(key, None)
+
+
+def _label(name):
+    """'Duo 256GB スターホワイト' -> ('256G', '白')"""
+    m = re.search(r"(\d+(?:GB|TB))\s+(\S+)", name)
+    return (m.group(1).replace("GB", "G"), COLORS.get(m.group(2), m.group(2))) if m else (name, "")
+
+
+def _duo_rows(rows):
+    order = {c: i for i, c in enumerate(TARGET_CAPACITIES)}
+    duo = [r for r in rows if r["name"].startswith("Duo")]
+    return sorted(duo, key=lambda r: (order.get(re.search(r"\d+(?:GB|TB)", r["name"]).group(0), 9), r["name"]))
+
+
+def jst_now():
+    return datetime.now(timezone(timedelta(hours=9))).strftime("%m/%d %H:%M:%S")
+
+
+def update_stock_table(state, rows, apple=None, error=False):
+    """店舗別の受け取り在庫表(スマホで見やすい短い表)を固定メッセージとして更新。"""
+    lines = ["        銀 丸 表 渋 新 川"]
+    for r in _duo_rows(rows):
+        cap, col = _label(r["name"])
+        if apple is None:
+            cells = " ".join("？" for _ in STORES)
+        else:
+            have = apple.get(r["part"], set())
+            cells = " ".join("○" if st in have else "×" for st in STORES)
+        lines.append(f"{cap:>4} {col}  {cells}")
+    text = ("🍎 **iPhone Duo 受け取り在庫(東京近郊)**\n"
+            f"更新 {jst_now()}" + (" ⚠取得失敗" if error else "") + "\n"
+            "```text\n" + "\n".join(lines) + "\n```\n"
+            "銀座・丸の内・表参道・渋谷・新宿・川崎 / ○受取可 ×なし ？未確認\n" + DUO_URL)
+    upsert_message(state, "Duo", text)
+
+
+def update_price_list(state, rows):
+    """買取価格と定価との差の一覧(スマホで見やすい短い表)を固定メッセージとして更新。"""
+    duo = _duo_rows(rows)
+    lines = []
+    for r in duo:
+        cap, col = _label(r["name"])
+        if r["best"] is None or r["msrp"] is None:
+            lines.append(f"{cap:>4} {col}  不明")
+        else:
+            lines.append(f"{cap:>4} {col} {r['best'] - r['msrp']:>+8,}  買取{r['best']:,}")
+    text = ("💴 **iPhone Duo 買取価格(定価との差)**\n"
+            f"更新 {jst_now()}\n"
+            "```text\n" + "\n".join(lines) + "\n```\n"
+            "買取最高値は買取Xの集計。仕入れ前に店で最新額を確認")
+    upsert_message(state, "価格", text)
 
 
 def send(text):
@@ -197,12 +245,14 @@ def cmd_stock(args):
     end = time.time() + args.minutes * 60
     fails, notified_fail, n = 0, False, 0
     rows = state.get("stock_table_rows", [])
+    retire_old_messages(state)
     update_stock_table(state, rows)
     while True:
         try:
             if n % 5 == 0 or n == 0:  # 価格表とAmazon在庫は5回に1回
                 rows = fetch_prices()
                 state["stock_table_rows"] = rows
+                update_price_list(state, rows)
             apple = fetch_apple_stock([r["part"] for r in rows])
             update_stock_table(state, rows, apple)
             fails, notified_fail = 0, False
