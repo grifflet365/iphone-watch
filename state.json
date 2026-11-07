@@ -122,8 +122,8 @@
    "name": "Duo 256GB スターホワイト",
    "part": "MK244J/A",
    "msrp": 364800,
-   "best": 372000,
-   "shop": "買取BASE",
+   "best": 371000,
+   "shop": "モバイルトリリオン",
    "amazon": false
   },
   {
@@ -138,7 +138,7 @@
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 427000,
+   "best": 425000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -170,7 +170,7 @@
    "name": "Duo 2TB スターホワイト",
    "part": "MK2A4J/A",
    "msrp": 574800,
-   "best": 608500,
+   "best": 606000,
    "shop": "買取ソムリエ",
    "amazon": false
   },
@@ -178,7 +178,7 @@
    "name": "Duo 2TB ナイトスカイ",
    "part": "MK2C4J/A",
    "msrp": 574800,
-   "best": 608500,
+   "best": 606000,
    "shop": "買取ソムリエ",
    "amazon": false
   }
