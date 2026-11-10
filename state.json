@@ -122,16 +122,16 @@
    "name": "Duo 256GB スターホワイト",
    "part": "MK244J/A",
    "msrp": 364800,
-   "best": 369000,
-   "shop": "ハチ買取",
+   "best": 368000,
+   "shop": "森森買取",
    "amazon": false
   },
   {
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 375500,
-   "shop": "ハチ買取",
+   "best": 374500,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
@@ -139,7 +139,7 @@
    "part": "MK264J/A",
    "msrp": 399800,
    "best": 421000,
-   "shop": "ハチ買取",
+   "shop": "買取BASE",
    "amazon": false
   },
   {
@@ -154,16 +154,16 @@
    "name": "Duo 1TB スターホワイト",
    "part": "MK284J/A",
    "msrp": 469800,
-   "best": 507000,
-   "shop": "ハチ買取",
+   "best": 506000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Duo 1TB ナイトスカイ",
    "part": "MK294J/A",
    "msrp": 469800,
-   "best": 507000,
-   "shop": "ハチ買取",
+   "best": 506000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
