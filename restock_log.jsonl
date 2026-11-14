@@ -1536,3 +1536,8 @@
 {"event": "appear", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "銀座", "at": "2026-11-14 16:19:09"}
 {"event": "appear", "part": "MK254J/A", "model": "Duo 256GB ナイトスカイ", "store": "銀座", "at": "2026-11-14 16:19:09"}
 {"event": "appear", "part": "MK2A4J/A", "model": "Duo 2TB スターホワイト", "store": "銀座", "at": "2026-11-14 16:19:10"}
+{"event": "appear", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "丸の内", "at": "2026-11-14 23:23:29"}
+{"event": "gone", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "銀座", "seconds": 25460, "at": "2026-11-14 23:23:29"}
+{"event": "appear", "part": "MK254J/A", "model": "Duo 256GB ナイトスカイ", "store": "丸の内", "at": "2026-11-14 23:23:30"}
+{"event": "gone", "part": "MK254J/A", "model": "Duo 256GB ナイトスカイ", "store": "銀座", "seconds": 25460, "at": "2026-11-14 23:23:30"}
+{"event": "gone", "part": "MK2A4J/A", "model": "Duo 2TB スターホワイト", "store": "銀座", "seconds": 25460, "at": "2026-11-14 23:23:30"}
