@@ -122,64 +122,64 @@
    "name": "Duo 256GB スターホワイト",
    "part": "MK244J/A",
    "msrp": 364800,
-   "best": 366000,
-   "shop": "アキモバ",
+   "best": 362500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 371000,
-   "shop": "アキモバ",
+   "best": 362500,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 418000,
-   "shop": "アキモバ",
+   "best": 404000,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 428500,
-   "shop": "アキモバ",
+   "best": 404000,
+   "shop": "ハチ買取",
    "amazon": false
   },
   {
    "name": "Duo 1TB スターホワイト",
    "part": "MK284J/A",
    "msrp": 469800,
-   "best": 502000,
-   "shop": "アキモバ",
+   "best": 484000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Duo 1TB ナイトスカイ",
    "part": "MK294J/A",
    "msrp": 469800,
-   "best": 502000,
-   "shop": "アキモバ",
+   "best": 484000,
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
    "name": "Duo 2TB スターホワイト",
    "part": "MK2A4J/A",
    "msrp": 574800,
-   "best": 605000,
-   "shop": "アキモバ",
+   "best": 586000,
+   "shop": "家電市場",
    "amazon": false
   },
   {
    "name": "Duo 2TB ナイトスカイ",
    "part": "MK2C4J/A",
    "msrp": 574800,
-   "best": 605000,
-   "shop": "アキモバ",
+   "best": 587000,
+   "shop": "買取ソムリエ",
    "amazon": false
   }
  ],
