@@ -1713,3 +1713,5 @@
 {"event": "gone", "part": "MK2C4J/A", "model": "Duo 2TB ナイトスカイ", "store": "表参道", "seconds": 32, "at": "2026-11-16 09:43:26"}
 {"event": "appear", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "銀座", "at": "2026-11-16 09:54:55"}
 {"event": "gone", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "銀座", "seconds": 32, "at": "2026-11-16 09:55:27"}
+{"event": "appear", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "銀座", "at": "2026-11-19 02:17:19"}
+{"event": "appear", "part": "MK254J/A", "model": "Duo 256GB ナイトスカイ", "store": "銀座", "at": "2026-11-19 02:17:19"}
