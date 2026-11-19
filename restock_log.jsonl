@@ -1758,3 +1758,4 @@
 {"event": "gone", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "丸の内", "seconds": 251, "at": "2026-11-19 09:25:38"}
 {"event": "appear", "part": "MK264J/A", "model": "Duo 512GB スターホワイト", "store": "川崎", "at": "2026-11-19 09:25:38"}
 {"event": "gone", "part": "MK264J/A", "model": "Duo 512GB スターホワイト", "store": "川崎", "seconds": 64, "at": "2026-11-19 09:26:42"}
+{"event": "gone", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "銀座", "seconds": 5410, "at": "2026-11-19 10:55:48"}
