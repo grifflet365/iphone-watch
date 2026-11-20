@@ -71,9 +71,7 @@
    "銀座"
   ],
   "MK244J/A": [],
-  "MK254J/A": [
-   "表参道"
-  ],
+  "MK254J/A": [],
   "MK264J/A": [],
   "MK274J/A": [],
   "MK284J/A": [],
@@ -124,7 +122,7 @@
    "name": "Duo 256GB スターホワイト",
    "part": "MK244J/A",
    "msrp": 364800,
-   "best": 360000,
+   "best": 358000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -132,23 +130,23 @@
    "name": "Duo 256GB ナイトスカイ",
    "part": "MK254J/A",
    "msrp": 364800,
-   "best": 360000,
-   "shop": "買取BASE",
+   "best": 358000,
+   "shop": "ゲストモバイル",
    "amazon": false
   },
   {
    "name": "Duo 512GB スターホワイト",
    "part": "MK264J/A",
    "msrp": 399800,
-   "best": 396000,
-   "shop": "家電市場",
+   "best": 397000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Duo 512GB ナイトスカイ",
    "part": "MK274J/A",
    "msrp": 399800,
-   "best": 398000,
+   "best": 400000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -156,7 +154,7 @@
    "name": "Duo 1TB スターホワイト",
    "part": "MK284J/A",
    "msrp": 469800,
-   "best": 472000,
+   "best": 474000,
    "shop": "買取BASE",
    "amazon": false
   },
@@ -164,24 +162,24 @@
    "name": "Duo 1TB ナイトスカイ",
    "part": "MK294J/A",
    "msrp": 469800,
-   "best": 472000,
-   "shop": "携帯空間",
+   "best": 474000,
+   "shop": "買取BASE",
    "amazon": false
   },
   {
    "name": "Duo 2TB スターホワイト",
    "part": "MK2A4J/A",
    "msrp": 574800,
-   "best": 572000,
-   "shop": "買取BASE",
+   "best": 570500,
+   "shop": "買取ソムリエ",
    "amazon": false
   },
   {
    "name": "Duo 2TB ナイトスカイ",
    "part": "MK2C4J/A",
    "msrp": 574800,
-   "best": 572000,
-   "shop": "買取BASE",
+   "best": 570500,
+   "shop": "買取ソムリエ",
    "amazon": false
   }
  ],
@@ -191,7 +189,6 @@
   "MJXG4J/A|銀座": 1793753982.8863149,
   "MJX84J/A|川崎": 1793776372.710214,
   "MJXH4J/A|表参道": 1793776372.710214,
-  "MJXE4J/A|表参道": 1793806029.2551532,
-  "MK254J/A|表参道": 1795139346.8156
+  "MJXE4J/A|表参道": 1793806029.2551532
  }
 }
