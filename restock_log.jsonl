@@ -1937,3 +1937,43 @@
 {"event": "gone", "part": "MK264J/A", "model": "Duo 512GB スターホワイト", "store": "銀座", "seconds": 187, "at": "2026-11-27 09:33:02"}
 {"event": "gone", "part": "MK254J/A", "model": "Duo 256GB ナイトスカイ", "store": "銀座", "seconds": 17210, "at": "2026-11-27 11:59:05"}
 {"event": "gone", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "銀座", "seconds": 50501, "at": "2026-11-27 21:14:28"}
+{"event": "appear", "part": "MK254J/A", "model": "Duo 256GB ナイトスカイ", "store": "銀座", "at": "2026-11-28 07:21:26"}
+{"event": "appear", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "銀座", "at": "2026-11-28 07:25:42"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "銀座", "at": "2026-11-28 07:25:42"}
+{"event": "appear", "part": "MK2A4J/A", "model": "Duo 2TB スターホワイト", "store": "銀座", "at": "2026-11-28 07:25:42"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "銀座", "seconds": 64, "at": "2026-11-28 07:26:45"}
+{"event": "appear", "part": "MK274J/A", "model": "Duo 512GB ナイトスカイ", "store": "渋谷", "at": "2026-11-28 07:28:20"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "渋谷", "at": "2026-11-28 07:28:20"}
+{"event": "gone", "part": "MK274J/A", "model": "Duo 512GB ナイトスカイ", "store": "渋谷", "seconds": 32, "at": "2026-11-28 07:28:52"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "渋谷", "seconds": 32, "at": "2026-11-28 07:28:52"}
+{"event": "gone", "part": "MK2A4J/A", "model": "Duo 2TB スターホワイト", "store": "銀座", "seconds": 222, "at": "2026-11-28 07:29:24"}
+{"event": "appear", "part": "MK274J/A", "model": "Duo 512GB ナイトスカイ", "store": "新宿", "at": "2026-11-28 07:39:21"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "新宿", "at": "2026-11-28 07:39:21"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "新宿", "seconds": 32, "at": "2026-11-28 07:39:53"}
+{"event": "gone", "part": "MK274J/A", "model": "Duo 512GB ナイトスカイ", "store": "新宿", "seconds": 127, "at": "2026-11-28 07:41:28"}
+{"event": "appear", "part": "MK274J/A", "model": "Duo 512GB ナイトスカイ", "store": "丸の内", "at": "2026-11-28 07:58:45"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "丸の内", "at": "2026-11-28 07:58:45"}
+{"event": "gone", "part": "MK274J/A", "model": "Duo 512GB ナイトスカイ", "store": "丸の内", "seconds": 32, "at": "2026-11-28 07:59:17"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "丸の内", "seconds": 64, "at": "2026-11-28 07:59:49"}
+{"event": "appear", "part": "MK274J/A", "model": "Duo 512GB ナイトスカイ", "store": "川崎", "at": "2026-11-28 08:14:28"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "川崎", "at": "2026-11-28 08:14:29"}
+{"event": "appear", "part": "MK274J/A", "model": "Duo 512GB ナイトスカイ", "store": "表参道", "at": "2026-11-28 08:15:00"}
+{"event": "gone", "part": "MK274J/A", "model": "Duo 512GB ナイトスカイ", "store": "川崎", "seconds": 32, "at": "2026-11-28 08:15:00"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "表参道", "at": "2026-11-28 08:15:01"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "川崎", "seconds": 32, "at": "2026-11-28 08:15:01"}
+{"event": "appear", "part": "MK2C4J/A", "model": "Duo 2TB ナイトスカイ", "store": "表参道", "at": "2026-11-28 08:15:01"}
+{"event": "gone", "part": "MK2C4J/A", "model": "Duo 2TB ナイトスカイ", "store": "表参道", "seconds": 33, "at": "2026-11-28 08:15:33"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "表参道", "seconds": 64, "at": "2026-11-28 08:16:04"}
+{"event": "gone", "part": "MK274J/A", "model": "Duo 512GB ナイトスカイ", "store": "表参道", "seconds": 96, "at": "2026-11-28 08:16:36"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "新宿", "at": "2026-11-28 08:41:47"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "新宿", "seconds": 31, "at": "2026-11-28 08:42:18"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "表参道", "at": "2026-11-28 09:05:53"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "新宿", "at": "2026-11-28 09:05:53"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "表参道", "seconds": 32, "at": "2026-11-28 09:06:24"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "新宿", "seconds": 32, "at": "2026-11-28 09:06:24"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "表参道", "at": "2026-11-28 09:12:10"}
+{"event": "appear", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "新宿", "at": "2026-11-28 09:12:10"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "表参道", "seconds": 32, "at": "2026-11-28 09:12:42"}
+{"event": "gone", "part": "MK294J/A", "model": "Duo 1TB ナイトスカイ", "store": "新宿", "seconds": 32, "at": "2026-11-28 09:12:42"}
+{"event": "appear", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "丸の内", "at": "2026-11-28 09:45:10"}
+{"event": "gone", "part": "MK244J/A", "model": "Duo 256GB スターホワイト", "store": "銀座", "seconds": 8368, "at": "2026-11-28 09:45:10"}
